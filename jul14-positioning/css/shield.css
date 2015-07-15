@@ -1,0 +1,54 @@
+main {
+	width: 230px;
+	height: 600px;
+	background-image: url("../img/captain_america_by_steeven7620-d7hvggl.png");
+	background-size: 100%;
+	position: relative;
+}
+
+div {
+	border-width:0px;
+	border-style: solid;
+	border-radius: 50%;
+	line-height: 100px;
+	position: absolute;
+}
+
+#star{
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/white-star-md.png");
+	background-color: blue;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: 202px;
+	left: 70px;
+	z-index: 10;
+}
+
+#star2 {
+	width: 121px;
+	height: 121px;
+	background-color: red;
+	top: 182px;
+	left: 49px;
+	z-index: 7;
+}
+
+#star3 {
+	width: 162px;
+	height: 162px;
+	background-color: hsla(28, 12%, 69%, 1);
+	top: 161px;
+	left: 28px;
+	z-index: 4;
+}
+
+#star4 {
+	width: 198px;
+	height: 198px;
+	background-color: red;
+	top: 144px;
+	left: 10px;
+	z-index: 1;
+}

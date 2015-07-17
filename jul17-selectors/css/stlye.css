@@ -1,0 +1,102 @@
+*, *::before *::after {
+	box-sizing: border-box;
+	}
+
+.clearfix::before, 
+.clearfix::after {
+		content: "";
+		display: block;
+		clear: both;
+}
+
+ul li {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+
+}
+
+nav > a {
+	float: left;
+}
+
+nav > ul  {
+	background-color: hsla(0, 100%, 50%, .25);
+	float: left;
+}
+
+nav > ul > li > a {
+	color: red;
+}
+nav::before,
+nav::after  {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ul  ul li:nth-of-type(2) {
+	background: green;
+}
+
+div figure:nth-of-type(even) img {
+	display: inline-block;
+	border-radius: 50%;
+}
+div figure {
+	float: left;
+}
+
+div figure:nth-of-type(odd) img {
+	transform: rotate(45deg);
+}
+div figure:nth-of-type(3) img {
+	transform: rotate(-45deg);
+}
+
+div figure img {
+	transition: all 0.3s ease-in-out;
+
+
+}
+div figure img:hover {
+	transform: rotate(360deg);
+	border: 2px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+
+div:nth-of-type(2)::before div:nth-of-type(2)::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+div:nth-of-type(3) img {
+	border: 3px solid black;
+	padding: 10px;
+}
+
+div:nth-of-type(3) img:nth-of-type(even) {
+	float: left;
+	clear: right;
+}
+div:nth-of-type(3) img:nth-of-type(odd) {
+	float: right;
+	clear: left;
+}
+
+div:nth-of-type(4)::before div:nth-of-type(4)::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+form::before, form:after {
+	content: "";
+	display: block;
+	clear: both;
+         }

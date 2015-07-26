@@ -12,10 +12,42 @@ ul {
 	transform: rotate(45deg);
 	position: relative;
 }
+
 ul li {
 	list-style: none;
 	transform: rotate(-45deg);
 }
+
+ul li:nth-of-type(1) h2 {
+	top: 10px;
+	right: 100px;
+}
+
+main h2 {
+	display: inline;
+	font-size: 200%;
+	width: 51%;
+	color: white;
+	float: right;
+	z-index: 5;
+}
+
+main h2:nth-of-type(1) {
+	padding-top: 120px;
+	padding-bottom: 70px;
+}
+
+main h2:nth-of-type(2) {
+	padding-top: 32px;
+	padding-bottom: 46px;
+}
+
+main h2:nth-of-type(3) {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+
 h1 {
 	font-size: 600%;
 	width: 400px;
@@ -42,14 +74,16 @@ span {
   margin:80px auto;
   width: 60px;
   height: 60px;
-  position:relative;
-  transform-origin:center bottom;
+  position:absolute;
+  top: 19px;
+  left: 235px;
   animation-name: flicker;
   animation-duration:3ms;
   animation-delay:200ms;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  z-index: 1;
 }
 
 .flame{
@@ -62,34 +96,38 @@ span {
 }
 
 .yellow{
-  left:15px; 
-  width: 30px;
-  height: 30px;
+  left:11px;
+  top: 65px; 
+  width: 47px;
+  height: 47px;
   background:gold;
   box-shadow: 0px 0px 9px 4px gold;
 }
 
 .orange{
-  left:10px; 
-  width: 40px;
-  height: 40px;
+  left:2px;
+  top: 55px; 
+  width: 60px;
+  height: 59px;
   background:orange;
   box-shadow: 0px 0px 9px 4px orange;
 }
 
 .red{
-  left:5px;
-  width: 50px;
-  height: 50px;
+  left:-4px;
+  top: 40px;
+  width: 69px;
+  height: 69px;
   background:OrangeRed;
   box-shadow: 0px 0px 5px 4px OrangeRed;
 }
 
 .white{
-  left:15px; 
-  bottom:-4px;
-  width: 30px;
-  height: 30px;
+  left:8px;
+  top:66px; 
+  bottom:-54px;
+  width: 49px;
+  height: 49px;
   background:white;
   box-shadow: 0px 0px 9px 4px white;
 }
@@ -103,7 +141,7 @@ span {
   width: 10px;
   height: 10px;
   left:25px;
-  bottom:-25px; 
+  bottom:-77px; 
   background: SlateBlue;
   box-shadow: 0px 0px 15px 10px SlateBlue;
 }
@@ -112,7 +150,7 @@ span {
   width: 40px;
   height: 40px;
   left:10px;
-  bottom:-60px;  
+  bottom:-110px;  
   background: black;
   box-shadow: 0px 0px 15px 10px black;
 }

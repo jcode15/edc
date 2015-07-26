@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+}
+
+h1, p {
+	color: #FF33CC;
+}
+
+svg {
+	background-color: #999966;
+	margin: 30px;
+}

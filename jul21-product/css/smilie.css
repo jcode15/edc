@@ -1,0 +1,41 @@
+
+#head {
+	background: yellow;
+	border-radius: 50%;
+	width: 600px;
+	height: 600px;
+	position: relative;
+}
+
+#lefteye {
+	background-color: black;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: relative;
+	top: 160px;
+	left: 115px;
+	display: block;
+}
+
+#righteye {
+	background-color: black;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: relative;
+	top: 74px;
+	left: 350px;
+	display: block;
+}
+
+#smile {
+	border-bottom: 20px solid black;
+	width: 300px;
+	height: 172px;
+	border-radius: 143%;
+	display: block;
+	position: relative;
+	top: 138px;
+	left: 125px;
+}

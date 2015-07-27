@@ -9,7 +9,9 @@ body {
 	height: 500px;
 	background-color: black;
 	}
-
+img {
+	background-color: pink;
+}
 ul h1 {
 	color: white;
 	margin: 0;

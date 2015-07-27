@@ -1,0 +1,67 @@
+/*put your scss here*/
+body {
+  background-color: #d0dec4;
+  font-family: sans-serif;
+  color: #b9a4cb;
+  font-size: 11px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 300;
+  margin: 0;
+}
+
+header {
+  background-color: #d0dec4;
+}
+header h1 {
+  float: left;
+}
+header nav {
+  float: right;
+}
+header li {
+  display: inline;
+}
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  background-color: #eaf0e5;
+  width: 75%;
+  float: left;
+}
+article h1 {
+  color: #82a663;
+}
+
+aside {
+  background-color: #9cb884;
+  width: 25%;
+  float: right;
+}
+
+footer {
+  background-color: #82a663;
+}
+footer p {
+  margin: 0;
+}
+
+header article aside footer {
+  /*padding: 0 0 $pad $pad;
+  margin: $mar;
+  font-weight: $font-weight;*/
+}

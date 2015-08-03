@@ -1,0 +1,186 @@
+/*put your scss here*/
+header {
+  background-image: url('../images/banner.jpg');
+  background-repeat: none;
+  position: relative;
+}
+header a:hover {
+  color: white;
+}
+header h1 {
+  font-size: 600%;
+  font-weight: 100;
+  color: rgba(64, 64, 64, 0.96);
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: -50px;
+  left: 305px;
+}
+header h2 {
+  color: tan;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 112px;
+  left: 526px;
+}
+header ul {
+  position: absolute;
+  top: 150px;
+  left: 152px;
+}
+header li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 25px;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button {
+  display: block;
+  background-color: rgba(64, 64, 64, 0.96);
+  border: 1px solid rgba(64, 64, 64, 0.96);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  width: 150px;
+  height: 35px;
+}
+
+.secone {
+  background-color: white;
+  width: 100%;
+  height: 770px;
+}
+.secone h2 {
+  font-size: 50px;
+  font-weight: 100;
+  color: rgba(64, 64, 64, 0.96);
+  text-transform: uppercase;
+  padding: 35px 0px 0px 80px;
+}
+.secone p {
+  display: block;
+  color: rgba(102, 102, 102, 0.96);
+  font-size: 18px;
+  padding: 10px 80px 10px 80px;
+}
+.secone::before, .secone::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sectwo {
+  background-color: lightgray;
+  width: 100%;
+  height: 600px;
+}
+.sectwo .one {
+  float: left;
+  width: 25%;
+}
+.sectwo .one a:hover {
+  text-decoration: underline;
+}
+.sectwo .one h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.sectwo .one p {
+  padding: 20px 30px 20px 35px;
+  font-size: 18px;
+}
+.sectwo .one a {
+  color: rgba(102, 102, 102, 0.96);
+  text-decoration: none;
+}
+.sectwo .two {
+  float: left;
+  width: 50%;
+}
+.sectwo .two h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.sectwo .two img {
+  width: 90%;
+}
+.sectwo .two p {
+  width: 90%;
+  color: rgba(102, 102, 102, 0.96);
+  font-size: 20px;
+  font-weight: 100;
+}
+.sectwo .three {
+  float: left;
+  width: 25%;
+}
+.sectwo .three a:hover {
+  text-decoration: underline;
+}
+.sectwo .three h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.sectwo .three p {
+  padding: 10px;
+  font-size: 18px;
+}
+.sectwo .three a {
+  color: rgba(102, 102, 102, 0.96);
+  text-decoration: none;
+}
+.sectwo::before, .sectwo::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.btntwo {
+  background: rgba(64, 64, 64, 0.96);
+  border: 1px solid rgba(64, 64, 64, 0.96);
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 35px;
+}
+.btntwo a:nth-of-type(1) {
+  color: rgba(255, 255, 255, 0.96);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+}
+footer p {
+  font: 50px;
+  color: rgba(102, 102, 102, 0.96);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0 0 0;
+}
+footer p:nth-of-type(2) {
+  margin: 0;
+  color: purple;
+}

@@ -1,0 +1,250 @@
+$bacolor: hsla(0, 0%, 0%, 1);
+$texcolor: hsla(0, 100%, 100%, 1);
+$btncolor: hsla(186, 61%, 59%, 1);
+$brncol: hsla(14, 38%, 16%, 1);
+$lthbrncolhsl: hsla(14, 37%, 40%, 1);
+$mktheading: hsla(14, 78%, 69%, 1);
+$drkbrncol: hsla(14, 38%, 11%, 1);
+$lightbrown: hsla(15, 38%, 34%, 1);
+$lighterbrown: hsla(15, 41%, 55%, 1);
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.head {
+	background-color: $bacolor;
+	width: 100%;
+	height: 150px;
+	padding: 5px;
+	h1 {
+		color: $texcolor;
+		float: left;
+		font-size: 50px;
+		font-weight: 100;
+		padding: 0 80px;
+	}
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+		padding: 25px;
+		color: $texcolor;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	a {
+		color: $texcolor;
+		font-size: 20px;
+		font-weight: 100;
+		text-decoration: none;
+	}
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.button {
+	background-color: $btncolor;
+	display: block;
+	width: 120px;
+	height: 50px;
+	border: 2px solid $btncolor;
+	border-radius: 5px;
+	text-align: center;
+	padding: 8px;
+	margin: 0;
+}
+
+.imgone {
+	width: 100%;
+	height: 480px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.section {
+	background-color: white;
+	width: 100%;
+	height: 600px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		float: left;
+		width: 25%;
+		height: 400px;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	h2 {
+		padding: 10px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	img {
+			width: 85%;
+	}
+		&::before,
+        &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	p {
+		float: left;
+		padding: 10px;
+	}
+}
+
+.two {
+	background-color: $lthbrncolhsl;
+	width: 100%;
+	height: 500px;
+	section {
+	background-color: $lthbrncolhsl;
+	float: left;
+	width: 25%;
+	height: 500px;
+	h3 {
+		font-size: 25px;
+		width: 120%;
+		color: $mktheading;
+	}
+	p {
+		color: hsla(14, 60%, 64%, 1);
+	}
+	}
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.secone {
+	width: 25%;
+	height: 500px;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	li {
+	 	display: block;
+	 	text-decoration: none;
+	 }
+
+	 img {
+	 	padding-top: 35px;
+	 }
+	 p {
+	 	width: 70%;
+	 	float: right;
+	 	padding-top: 30px;
+	 }
+	 &::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+}
+
+.sectwo {
+	width: 25%;
+	li {
+	 	display: block;
+	 	text-decoration: none;
+	 }
+
+	 img {
+	 	padding-top: 35px;
+	 }
+	 p {
+	 	width: 70%;
+	 	float: right;
+	 	padding-top: 30px;
+	 }
+	 &::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+}
+
+.secthree {
+	img {
+		padding: 35px;
+	}
+	p {
+		float: left;
+		width: 160%;
+    	margin: 5px;
+    	padding-left: 30px;
+	}
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	h3 {
+		padding-left: 35px;
+	}
+}
+
+.three {
+	background-color: $drkbrncol;
+	color: $lighterbrown;
+	width: 100%;
+	height: 550px;
+	position: relative;
+	text-decoration: none;
+	h4 {
+		width: 50%;
+		margin: 0;
+		padding: 70px 50px 0px 50px;
+		font-size: 30px;
+	}
+	p {
+		width: 70%;
+		padding: 5px 50px;
+	}
+
+		nav {
+			width: 50%;
+			height: 500px;
+			position: relative;
+			text-decoration: none;
+			bottom: 407px;
+			left: 905px;
+		}
+		li {
+			padding: 10px;
+			display: block;
+			text-decoration: none;
+			color: $lighterbrown;
+		}
+        a {
+    		color: $lighterbrown;
+
+    	}
+}
+footer {
+	background-color: $drkbrncol;
+}

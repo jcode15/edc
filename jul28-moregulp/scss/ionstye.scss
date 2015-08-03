@@ -1,0 +1,151 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+$main-color: gray;
+$main-color-light: lighten($main-color, 20);
+$main-color-dark: darken($main-color, 10);
+$wid: 100%;
+$pad: 40px;
+$halfpad: $pad / 2;
+
+
+header {
+	width: $wid;
+	height: 38px;
+	border-top: 2px;
+	font-size: 150%;
+	margin: 0;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	h1 {
+	float: left;
+	font-size: $wid;
+	color: $main-color-dark;
+	}
+	ul {
+		float: right;
+		
+}
+}
+
+header li {
+		float: left;
+		display: inline;
+		font-size: 60%;
+		margin-right: 15px;
+		text-transform: uppercase;
+}
+
+header a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+section {
+	width: $wid;
+	height: 700px;
+}
+
+section:nth-of-type(1) img { 
+   position: relative; 
+   width: $wid;
+   height: 75%; 
+   /* for IE 6 */
+}
+
+section:nth-of-type(1) h1 { 
+   color: white;
+   text-align: center;
+   font-size: 500%;
+   text-transform: uppercase;
+   position: absolute; 
+   top: 90px; 
+   left: 0; 
+   width: $wid; 
+}
+
+ section:nth-of-type(1) p {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	position: relative;
+	bottom: 300px;
+	
+}
+
+.button {
+	text-decoration: none;
+	text-align: center;
+	font-size: 250%;
+	color: white;
+	display: block;
+    height: 48px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    bottom: 255px;
+    left: 388px;
+}
+
+.button2 {
+	text-decoration: none;
+	text-align: center;
+	font-size: 250%;
+	color: white;
+	display: block;
+    height: 50px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+    bottom: 303px;
+    left: 647px;
+}
+
+section:nth-of-type(2) {
+	width: $wid;
+	padding: 0;
+	margin: 0;
+	h2 {
+		font-size: 300%;
+		text-align: center;
+		color: $main-color-dark;
+		position: relative;
+		bottom: 120px;
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		text-align: center;
+		color: $main-color-dark;
+		position: relative;
+		bottom: 110px;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+section:nth-of-type(3) {
+	width: $wid;
+	p {
+		text-align: center;
+		color: $main-color-light;
+	}
+}
+
+section:nth-of-type(3) div {
+		border: 2px solid lightgray;
+		border-width: 100px;
+		border-height: 100px;
+}

@@ -1,0 +1,123 @@
+/* put your scss here */
+/*$font-size: ;
+$border-width: ;*/
+$color-blue: hsla(200, 50%, 60%, 1);
+$color-black: hsla(0, 0%, 8%, 1);
+$color-white: hsla(0, 0%, 92%, 1);
+
+@import "extend";//this is a partial
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	a {
+		
+
+		@extend %background;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+	margin: 0;
+}
+
+header {
+	@extend %background;
+	@extend %clearfix;
+	margin-bottom: 20px;
+}
+
+nav {
+	a {
+		float: left;
+		color: $color-black;
+	}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			line-height: 38px;
+		}
+	}
+}
+
+header, main {
+	padding: 0 10%;
+}
+
+article {
+	//@extend %background
+	@include background-mixin(red, purple, 50px);
+	margin: 20px 0;
+}
+
+footer {
+	@extend %background;
+	margin-top: 40px;
+}
+
+.btn {
+	border-radius: 4px;
+	padding: 10px 20px;
+	background-color: $color-blue;
+	border: 1px solid orange;
+	&.btn-1 {
+		width: 100px;
+		font-size: 16px;
+		border-width: 1px;
+           }
+    &.btn-2 {
+	width: 120px;
+	font-size: 20px;
+	border-width: 2px;
+    }
+    &.btn-3 {
+	width: 140px;
+	font-size: 24px;
+	border-width: 3px;
+    }
+
+    &.btn-4 {
+	width: 140px;
+	font-size: 28px;
+	border-width: 4px;
+       }
+}
+
+header h1 {
+	@include h1 (purple, blue, 24px);
+}
+
+footer h1 {
+	@include h1 (yellow, green, 20px);
+
+}
+
+blockquote {
+	border: {
+		color: red;
+		width: 5px;
+		style: solid;
+	}
+		font: {
+		family: Helvetica, Arial, sans-serif;
+		size: 25px;
+		weight: 100;
+		style: italic;
+		variant: small-caps;
+		}
+}

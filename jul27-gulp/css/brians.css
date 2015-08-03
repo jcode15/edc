@@ -1,0 +1,115 @@
+div:first-child {
+  width: 100%;
+  height: 50px;
+  background-color: lightblue;
+}
+
+nav li {
+  display: inline-block;
+  float: right;
+  padding-left: 35px;
+}
+nav li::before, nav li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+li a {
+  position: relative;
+  top: 25px;
+  right: 100px;
+  font-size: 130%;
+  text-decoration: none;
+  color: #aba4ea;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #aba4ea;
+}
+
+header img {
+  position: relative;
+  top: 25px;
+  left: 75px;
+  float: left;
+}
+header img::before, header img::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section ul li {
+  float: left;
+}
+section ul li::before, section ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section:nth-of-type(2) {
+  background-color: #aba4ea;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+section h1 {
+  font-size: 250%;
+}
+
+section p {
+  float: left;
+  width: 50%;
+}
+
+div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 150%;
+  color: white;
+  margin: 30px;
+  padding-left: 130px;
+}
+
+div:nth-of-type(2) {
+  display: inline;
+  float: right;
+  width: 50%;
+  height: 75px;
+}
+div:nth-of-type(2)::before, div:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section:nth-of-type(2) {
+  width: 100%;
+  height: 150px;
+}
+
+section:nth-of-type(3) {
+  width: 100%;
+  height: 500px;
+  background-color: lightgray;
+  border-bottom: 3px solid gray;
+}
+
+section:nth-of-type(3) li {
+  display: inline;
+  width: 15.5%;
+  padding: 0;
+  margin: 0;
+}
+
+section:nth-of-type(3) p {
+  width: 15.5%;
+  text-align: center;
+  font-size: 80%;
+}

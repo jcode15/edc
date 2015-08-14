@@ -1,0 +1,142 @@
+/*put your scss here*/
+body {
+  background-color: black;
+}
+body .maincon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .maincon .topcon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+body .maincon .topcon .contain {
+  -webkit-flex: 15;
+      -ms-flex: 15;
+          flex: 15;
+}
+body .maincon .topcon .contain .about img {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+body .maincon .topcon .contain .about img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+body .maincon .topcon .contain .service img {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+body .maincon .topcon .contain .service img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+body .maincon .topcon .contain .contact img {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+body .maincon .topcon .contain .contact img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+body .maincon .topcon .container {
+  -webkit-flex: 25;
+      -ms-flex: 25;
+          flex: 25;
+}
+
+.bottomcon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-left: 10%;
+  width: 110%;
+}
+
+@media screen and (max-width: 1400px) {
+  .about img, .contact img, .service img {
+    width: 50%;
+    margin: 5%;
+  }
+}
+.contain {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.container img {
+  width: 110%;
+}
+
+.polio {
+  margin-right: 10%;
+}
+
+.temp img {
+  width: 10%;
+}
+
+@media screen and (max-width: 992px) {
+  .about img, .contact img, .service img {
+    width: 60%;
+  }
+}
+.contain {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.container {
+  margin-right: 20%;
+}
+.container img {
+  width: 130%;
+}
+
+.temp {
+  width: 20%;
+  padding: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .about img, .contact img, .service img {
+    width: 80%;
+    margin: 10%;
+  }
+}
+.contain {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.container {
+  margin-right: 15%;
+}
+.container img {
+  width: 150%;
+}
+
+.container .temp img {
+  width: 180%;
+  margin: 1%;
+}

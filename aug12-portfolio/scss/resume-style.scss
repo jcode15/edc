@@ -7,11 +7,13 @@ body {
 		size: cover;
 	}
 }
-h1, p, a {
+h1, a {
 	color: $drkestgray;
 }
 
-
+.containerone>p {
+	color: $drkestgray;
+}
 ul {
 	display: flex;
 	flex-direction: row;
@@ -34,7 +36,9 @@ h1 {
 	text-align: center;
 }
 
-footer>p {
+footer {
 	text-align: center;
+	p {
 	color: $hotpink;
+	}
 }

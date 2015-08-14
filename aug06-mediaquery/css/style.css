@@ -1,0 +1,115 @@
+/*put your scss here*/
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  h1 {
+    font-size: 100%;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  article {
+    float: left;
+  }
+
+  aside {
+    float: right;
+  }
+
+  footer {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightpink;
+  }
+  body::before, body::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  header {
+    float: right;
+    width: 100%;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  aside {
+    float: right;
+    width: 50%;
+  }
+  aside::before, aside::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  article {
+    float: left;
+    width: 50%;
+  }
+  article::before, article::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  h1 {
+    font-size: 700%;
+  }
+
+  footer {
+    background-color: pink;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  footer {
+    background-color: blue;
+  }
+}
+@media print {
+  body {
+    background-color: transparent;
+  }
+
+  h1 {
+    font-size: 800%;
+  }
+}

@@ -1,0 +1,140 @@
+/*put your scss here*/
+@import 'variables';
+body {
+	background-color: $black;
+.maincon {
+	display: flex;
+	flex-direction: column;
+	.topcon {
+		display: flex;
+		flex-direction: row-reverse;
+		.contain {
+			flex: 15;
+			.about {
+				img {
+					transform: rotate(-25deg);
+					-webkit-transition: -webkit-transform .8s ease-in-out;
+                     transition: transform .8s ease-in-out;
+				}
+				img:hover {
+					  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+					}
+			}
+			 .service {
+				img {
+					transform: rotate(-25deg);
+					-webkit-transition: -webkit-transform .8s ease-in-out;
+                    transition: transform .8s ease-in-out;
+				}
+				img:hover {
+					  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+					}
+				}
+			.contact {
+				img {
+				transform: rotate(25deg);
+				-webkit-transition: -webkit-transform .8s ease-in-out;
+                 transition: transform .8s ease-in-out;
+				}
+				img:hover {
+					  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+					}
+				}
+			}
+		.container {
+			flex: 25;
+	    }
+	   }
+	}
+}
+ .bottomcon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 10%;
+	width: 110%;
+}
+
+@media screen and (max-width: 1400px){
+	.about, .contact, .service {
+		img {
+			width: 50%;
+			margin: 5%;
+		}
+	}
+}
+.contain {
+	margin-top: 5%;
+	margin-left: 15%;
+}
+
+.container {
+			img {
+				width: 110%;
+			}
+}
+.polio {
+	margin-right: 10%;
+}
+
+.temp {
+	img {
+		width: 10%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.about, .contact, .service {
+		img {
+	        width: 60%;
+      }
+	}
+}
+
+.contain {
+	margin-top: 5%;
+	margin-left: 15%;
+}
+.container {
+			margin-right: 20%;
+			img {
+				width: 130%;
+			}
+}
+
+.temp {
+		width: 20%;
+		padding: 5%;
+	}
+
+@media screen and (max-width: 768px){
+	.about, .contact, .service {
+		img {
+			width: 80%;
+			margin: 10%;
+		}
+	}
+}
+
+.contain {
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.container {
+			margin-right: 15%;
+			img {
+				width: 150%;
+			}
+}
+.container {
+	.temp {
+		img {
+			width: 180%;
+			margin: 1%;
+		}	
+	}
+}

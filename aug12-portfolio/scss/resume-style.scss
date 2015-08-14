@@ -1,0 +1,40 @@
+@import 'variables';
+
+body {
+	background:{
+		image: url("../img/office background.jpg");
+		repeat: no-repeat;
+		size: cover;
+	}
+}
+h1, p, a {
+	color: $drkestgray;
+}
+
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	li {
+		flex: none;
+		display: inline-block;
+		margin-top: 10%;
+	}
+	a {
+	flex: 5;
+	font-size: 200%;
+	text-decoration: none;
+ }
+}
+
+h1 {
+	text-align: center;
+}
+
+footer>p {
+	text-align: center;
+	color: $hotpink;
+}

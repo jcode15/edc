@@ -1,0 +1,173 @@
+header {
+  background-image: url("../img/Z.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+header h1:first-child {
+  float: left;
+  font-size: 250%;
+  font-weight: 100;
+  color: white;
+}
+header h1:first-child::before, header h1:first-child::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header h2 {
+  font-size: 300%;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+header h3 {
+  font-size: 200%;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 0;
+}
+header li:first-child a {
+  width: 120px auto;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: blue;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+}
+header nav {
+  float: right;
+}
+header nav::before, header nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header nav li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 40px;
+}
+header nav a {
+  font-size: 80%;
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header nav .button {
+  width: 120px auto;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: blue;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+}
+
+div {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+div h2 {
+  font-size: 400%;
+  font-weight: 100;
+}
+div h3 {
+  font-size: 200%;
+  font-weight: 80;
+  margin-top: 0;
+}
+div a {
+  width: 120px auto;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: blue;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+}
+
+.secone {
+  width: 100%;
+  text-align: center;
+  color: darkgray;
+}
+.secone h1 {
+  font-size: 250%;
+  font-weight: 100;
+  text-align: center;
+}
+.secone h3 {
+  font-size: 200%;
+  font-weight: 80;
+  margin-top: 0;
+}
+.secone p {
+  float: left;
+  width: 33%;
+}
+.secone p::before, .secone p::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.secone a {
+  float: left;
+  width: 33%;
+}
+.secone a::before, .secone a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sectwo {
+  width: 100%;
+  background-color: blue;
+  color: white;
+}
+.sectwo h1, .sectwo h3 {
+  text-align: center;
+}
+.sectwo h1 {
+  font-size: 300%;
+  padding-top: 50px;
+}
+.sectwo h3 {
+  font-size: 100%;
+}
+.sectwo p {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.sectwo a {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+footer p {
+  position: relative;
+  top: 68px;
+  color: darkgray;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+h1 {
+  font-size: 200%;
+  text-align: center;
+}
+
+ul {
+  float: right;
+}
+ul::before, ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}

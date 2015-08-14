@@ -1,0 +1,62 @@
+/*put your scss here*/
+h1 {
+  font-size: 250%;
+}
+
+p {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: purple;
+  }
+  body h1 {
+    font-size: 700%;
+    color: lightpink;
+  }
+  body p {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: blue;
+  }
+  body h1 {
+    font-size: 500%;
+    color: lightblue;
+  }
+  body p {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    background-color: yellow;
+  }
+  body h1 {
+    font-size: 300%;
+    color: forestgreen;
+  }
+  body p {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+  body h1 {
+    font-size: 100%;
+    color: yellow;
+  }
+  body p {
+    width: 100%;
+  }
+}
+@media print {
+  p {
+    font-size: 1000%;
+  }
+}

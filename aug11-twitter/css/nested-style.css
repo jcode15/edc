@@ -1,0 +1,117 @@
+header {
+  text-align: center;
+}
+header h1 {
+  font-weight: 300;
+}
+
+main {
+  background-color: purple;
+  width: 100%;
+  padding-bottom: 400px;
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+main .asideone {
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-color: blue;
+  margin: 10px;
+}
+main .asideone div {
+  text-align: center;
+}
+main article {
+  -webkit-flex: 20;
+      -ms-flex: 20;
+          flex: 20;
+  background-color: tan;
+  margin: 5px;
+}
+main article ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main article ul li {
+  list-style: none;
+}
+main article ul .AG4 {
+  background-color: pink;
+  -webkit-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-align-items: start-;
+      -ms-flex-align: start-;
+          align-items: start-;
+}
+main article ul .AG5 {
+  background-color: red;
+  -webkit-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-align-items: start-end;
+      -ms-flex-align: start-end;
+          align-items: start-end;
+}
+main article ul .AG6 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main article ul .AG7 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main article ul .AG8 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main article ul .AG9 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main article ul .AG10 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main .asidetwo {
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-color: pink;
+  margin: 10px;
+}
+main .asidetwo div {
+  text-align: center;
+}

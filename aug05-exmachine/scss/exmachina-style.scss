@@ -1,0 +1,92 @@
+/*put your scss here*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import "variables";
+@import "layout";
+
+.content {
+		padding: {
+		top: 100px;
+		bottom: 25px;
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn-exmachina {
+    color: $main-white;
+    background-color: $main-orange;
+    border: none;
+    margin-top: 30px;
+    transition: all 250ms ease-in-out;
+    &:hover {
+    	background-color: darken($main-orange, 10);
+    }
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: {
+    	left: 20px;
+    	right: 20px;
+			}
+}
+
+.hero {
+	height: 350px;
+	background: {
+		image: url("../img/banner.jpg");
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+}
+
+.row:first-of-type {
+	img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px){
+	.row:first-of-type{
+		a {
+			display: block;
+		}
+	}
+}
+
+#row1 img {
+	width: 100%;
+	height: auto;
+}
+
+#row3 {
+	.content {
+		background-color: $main-white;
+		padding: 25px;
+	}
+}
+
+#row4 {
+	margin: 0;
+	padding: 0;
+	#box {
+		background-color: $main-white;
+		border-radius: 10px;
+		margin-top: 40px;
+	}
+
+	.content {
+		padding: 10px;
+		a {
+			color: $drk-main;
+		}
+	}
+}
+
+@media screen and (mas-width: 768px){
+	a.btn {
+		display: block;
+	}
+}

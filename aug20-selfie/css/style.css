@@ -1,0 +1,160 @@
+/*put your scss here*/
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+}
+
+h1 {
+  color: pink;
+}
+
+.one p {
+  width: 75%;
+  color: pink;
+  font-size: 110%;
+  margin: 5%;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container div {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 600px;
+  height: 300px;
+  margin: 2% 7%;
+}
+
+.container div:nth-of-type(1) {
+  background-image: url("../img/sj-one.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container div:nth-of-type(2) {
+  background-image: url("../img/sj-two.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containertoo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containertoo div {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 600px;
+  height: 300px;
+  margin: 2% 7%;
+}
+
+.containertoo div:nth-of-type(1) {
+  background-image: url("../img/sj-three.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containertoo div:nth-of-type(2) {
+  background-image: url("../img/sj-six.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerthree {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerthree div {
+  width: 600px;
+  height: 300px;
+}
+
+.containerthree div {
+  background-image: url("../img/sj-seven.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sectwo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectwo p {
+  width: 75%;
+  color: pink;
+  margin: 3%;
+}
+
+.icon {
+  text-align: center;
+}
+
+.fa {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}

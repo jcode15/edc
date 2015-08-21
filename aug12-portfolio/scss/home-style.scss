@@ -1,5 +1,6 @@
 /*put your scss here*/
 @import 'variables';
+
 body {
 	background-color: $black;
 .maincon {
@@ -54,87 +55,124 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-left: 10%;
-	width: 110%;
 }
 
 @media screen and (max-width: 1400px){
-	.about, .contact, .service {
-		img {
-			width: 50%;
-			margin: 5%;
+
+	.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
+			}
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
+			width: 80%;
 		}
 	}
 }
-.contain {
-	margin-top: 5%;
-	margin-left: 15%;
-}
-
-.container {
-			img {
-				width: 110%;
-			}
-}
-.polio {
-	margin-right: 10%;
-}
-
-.temp {
-	img {
-		width: 10%;
-	}
-}
-
 @media screen and (max-width: 992px){
-	.about, .contact, .service {
-		img {
-	        width: 60%;
-      }
-	}
-}
-
-.contain {
-	margin-top: 5%;
-	margin-left: 15%;
-}
-.container {
-			margin-right: 20%;
-			img {
-				width: 130%;
+		.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
 			}
-}
-
-.temp {
-		width: 20%;
-		padding: 5%;
+		}
 	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
+			width: 80%;
+		}
+	}
+}
 
 @media screen and (max-width: 768px){
-	.about, .contact, .service {
-		img {
+		.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
+			}
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
 			width: 80%;
-			margin: 10%;
 		}
 	}
 }
 
-.contain {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-.container {
-			margin-right: 15%;
-			img {
-				width: 150%;
+@media screen and (max-width: 400px) {
+		.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
 			}
-}
-.container {
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
 	.temp {
-		img {
-			width: 180%;
-			margin: 1%;
-		}	
+		a img {
+			width: 80%;
+		}
 	}
 }

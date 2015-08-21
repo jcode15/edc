@@ -1,0 +1,26 @@
+/* put your scss answers here */
+@import 'variables';
+ol {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: spaced-around;
+	li {
+		counter-increment: step-counter;
+	}
+	li:before{
+		content: counter(step-counter);
+}
+}
+
+$items: 40;
+$hue-val:(360 / 40);
+	@for $i from 1 through $items {
+		$hue: ($hue-val * $i);
+		li:nth-of-type(#{$i})
+		&:hover{
+			background-image: linear-gradient(to top, hsl($hue, 30%, 60%), hsl($hue, 30%, 80%));
+		}
+		&::before {
+			content: '#{i}';
+		}
+	}

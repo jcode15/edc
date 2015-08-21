@@ -1,0 +1,100 @@
+/*put your scss here*/
+body {
+	font-family: 'Oswald', sans-serif;
+	background-color: black;
+}
+h1 {
+	color: pink;
+}
+.one p{
+	width: 75%;
+	color: pink;
+	font-size: 110%;
+	margin: 5%;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.container div {
+	flex: 1;
+	width: 600px;
+	height: 300px;
+	margin: 2% 7%;
+}
+
+$img: one two;
+@each $imgs in $img {
+	$i: index($img, $imgs);
+	.container div:nth-of-type(#{$i}){
+		background-image: url('../img/sj-#{$imgs}.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.containertoo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.containertoo div {
+	flex: 1;
+	width: 600px;
+	height: 300px;
+	margin: 2% 7%;
+}
+$img: three six;
+@each $imgs in $img {
+	$i: index($img, $imgs);
+	.containertoo div:nth-of-type(#{$i}){
+		background-image: url('../img/sj-#{$imgs}.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.containerthree {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.containerthree div{
+		width: 600px;
+		height: 300px;
+}
+.containerthree div {
+	background-image: url('../img/sj-seven.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sectwo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	p {
+		width: 75%;
+		color: pink;
+		margin: 3%;
+	}
+}
+.icon {
+	text-align: center;
+}
+.fa {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}

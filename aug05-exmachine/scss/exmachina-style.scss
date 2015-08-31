@@ -1,7 +1,23 @@
 /*put your scss here*/
-@import (http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
-@import "layout";
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import 'layout';
+@import 'variables';
 
+
+.navbar-default .navbar-brand {
+    font-size: 300%;
+    text-decoration: none;
+    color: #777;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 150%;
+    text-decoration: none;
+}
+.navbar-brand {
+    
+    padding: 30px 15px;
+   
+}
 .content {
 		padding: {
 		top: 100px;
@@ -47,6 +63,10 @@
 		width: 100%;
 	}
 }
+#row4 p {
+	color: $lightgray;
+}
+
 @media screen and (max-width: 768px){
 	.row:first-of-type{
 		a {
@@ -79,7 +99,7 @@
 	.content {
 		padding: 10px;
 		a {
-			color: $drk-main;
+			color: $main-white;
 		}
 	}
 }

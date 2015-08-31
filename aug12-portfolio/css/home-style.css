@@ -71,6 +71,16 @@ body .maincon .topcon .container {
           justify-content: space-around;
 }
 
+footer {
+  text-align: center;
+}
+footer p {
+  color: rgba(255, 107, 181, 0.95);
+}
+footer p span {
+  color: rgba(255, 255, 255, 0.96);
+}
+
 @media screen and (max-width: 1400px) {
   .contain {
     margin-top: 5%;

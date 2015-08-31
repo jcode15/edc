@@ -1,18 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import 'variables';
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1, h2, h3, h4 {
-	text-transform: uppercase;font-weight: 300;}
+	text-transform: uppercase;
+	font-weight: 300;
+}
 h1 {font-size: 300%;
 	margin-bottom: 0;
 }
 h2 {font-size: 180%;
-	margin-bottom: 40px;}
+	margin-bottom: 40px;
+}
 h3 {font-size: 150%;
 	margin-top: 0;
 }
-h4 {font-size: 120%;}
+h4 {font-size: 120%;
+}
 
 a {
 	text-decoration: underline;
@@ -29,7 +35,6 @@ ul {
 	list-style: none;
 	padding: 0;
 	li {
-	border-bottom: 1px solid lightgray;
 	padding: 15px 0;
 	&::before, &::after {
 		content: "";

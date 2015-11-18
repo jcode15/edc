@@ -1,0 +1,222 @@
+@import 'variables';
+@import 'reset';
+@import 'fontawesome';
+
+/*HEADER STARTS HERE*/
+.img {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 0;
+	background-color: black;
+	color: white;
+	nav {
+		ul {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0;
+			margin: 0;
+			li{
+				list-style: none;
+				line-height: 1em;
+				padding: 5%;
+				margin: 0;
+				&:hover {
+		 				background-color: lightgray;
+		 				color: black;
+		 			}
+				a {
+					text-decoration: none;
+		 			text-transform: uppercase;
+		 			color: inherit;
+		 			padding: 0;
+		 			margin: 0;
+		 			white-space: nowrap;
+				}
+			}
+			li:last-child {
+				margin-right: 5%;
+			}
+
+		}
+	}
+}
+section #pagetwo {
+	display: flex;
+	flex-direction: row;
+	div:first-child {
+	width: 20%;
+	}
+
+	div:nth-of-type(2) {
+		width: 60%;
+		text-align: center;
+		h2 {
+			width: 100%;
+			font-size: 2em;
+			background-color: hsla(0, 0%, 62%, .95);;
+			padding: 5% 0;
+		}
+	}
+	div:last-child {
+	width: 20%;
+	}
+}
+div.img {
+	width: 100%;
+	height: 400px;
+	background: {
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+}
+@for $i from 1 through 12 {
+	div.img:nth-of-type(#{$i}) { 
+			background-image: url('../img/!Raiders#{$i}.jpg');
+		}
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 0;
+	background: {
+		image: url('../img/nfl-back.jpg');
+		repeat: no-repeat;
+		size: 40%;
+		position: center;
+		color: black;
+	}
+	color: white;
+	h1 {
+	 padding: 2%;
+	 line-height: 1em;
+	 white-space: nowrap;
+	}
+	nav {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-end;
+			padding: 0;
+			margin: 0;
+			li{
+				list-style: none;
+				line-height: 1em;
+				padding: 3%;
+				margin: 0;
+				//white-space: nowrap;
+				&:hover {
+		 				background-color: lightgray;
+		 				color: black;
+		 			}
+				a {
+					text-decoration: none;
+		 			text-transform: uppercase;
+		 			color: inherit;
+		 			padding: 0;
+		 			margin: 0;
+				}
+			}
+			li:last-child {
+				margin-right: 5%;
+			}
+
+		}
+	}
+}
+/*HEADER ENDS HERE*/
+
+/*MAIN STARTS HERE*/
+main {
+	display: flex;
+	align-items: center;
+	div:first-child {
+		width: 20%;
+		height: 600px;
+		background: {
+			image: url('../img/Raiders1-left.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+		}
+	}
+	div:nth-of-type(2) {
+		display: flex;
+		display: row;
+		justify-content: center;
+		width: 60%;
+		height: 600px;
+		background-color: gray;
+		div {
+			width: 80%;
+			height: 400px;
+
+			background: { 
+				//image: url('../img/Raiders-1.jpg');
+				//size: cover;
+				position: center;
+				repeat: no-repeat;
+			
+			}
+			animation: {
+				name: slide;
+				duration: 50s;
+				iteration-count: infinite;
+				//infinite so it doesnt stop
+				timing-function: ease-out;
+				//& linear, ease, ease-in, ease-out, ease-in-out;
+			}	
+		}
+	}
+	div:last-child {
+		width: 20%;
+		height: 600px;
+		background: {
+			image: url('../img/raiders-right.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat; 
+		}
+	}
+}
+
+@keyframes slide {
+	$slide: 100 / 12;
+	@for $i from 1 through 12 {
+		$big: $slide * $i;
+		#{$big}% {
+			background-image: url('../img/!Raiders#{$i}.jpg');
+		}
+	}
+}
+
+#pagetwo {
+	display: flex;
+	flex-direction: row;
+	div:first-child {
+		background-color: black;
+		width: 20%;
+	}
+	div:nth-of-type(2){
+		background-color: gray;
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h1 {
+			font-size: 3em;
+		}
+	}
+	div:last-child{
+		background-color: black;
+		width: 20%;
+	}
+}

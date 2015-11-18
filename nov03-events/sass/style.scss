@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'reset';
+@import 'fontawesome';
+body {
+	background-color: hsla(0, 0%, 96%, 1);
+}
+p, input {
+	background-color: hsla(0, 0%, 100%, 1);
+	border: 1px solid gray;
+	padding: 10px;
+	margin: 5vw;
+}
+h1 {
+	text-align: center;
+	margin: 5vw;
+	font-size: 3em;
+}
+
+main {
+	width: 300px;
+	height: 300px;
+	background-color: pink;
+	margin: 50px auto;
+	position: relative;
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: dodgerblue;
+		z-index: 1;
+	}
+	div:nth-of-type(1) {
+		position: absolute;
+		width: 50%;
+		height: 10px;
+		background-color: black;
+		top: 29%;
+		left: 67%;
+		z-index: 19;
+		transform: rotate(90deg);
+	}
+	div:nth-of-type(2){
+		position: absolute;
+		width: 98%;
+		height: 10px;
+		background-color: black;
+		top: 3%;
+		z-index: 1;
+	}
+	div:nth-of-type(3){
+		position: absolute;
+		width: 90%;
+		height: 10px;
+		background-color: black;
+		top: 53%;
+		left: 7%;
+		z-index: 10;
+	}
+	div:nth-of-type(4){
+		position: absolute;
+		width: 90%;
+		height: 10px;
+		background-color: black;
+		top: 92%;
+		left: -1%;
+		z-index: 39;
+		transform: rotate(-10deg);
+	}
+	div:nth-of-type(5){
+		position: absolute;
+		width: 40%;
+		height: 10px;
+		background-color: black;
+		top: 74.75%;
+		left: 7%;
+		z-index: 39;
+		transform: rotate(90deg);
+		transition: transform .8s all 1s ease; //ease-in-out
+		transform: rotate(-90deg);
+	}
+	div:nth-of-type(6){
+		position: absolute;
+		width: 34%;
+		height: 10px;
+		background-color: black;
+		top: 69%;
+		left: 70%;
+		z-index: 39;
+		transform: rotate(90deg);
+	}
+}
+
+small {
+font-size: 4em;
+}

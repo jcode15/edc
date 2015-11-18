@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'reset';
+//@import 'fontawesome';
+
+h1{
+	background-color: pink;
+	font-size: 3em;
+	float: left;
+}
+nav {
+	background-color: green;
+	float: right;
+	ul {
+		li {
+			font-size: 2em;
+			padding-right: 5%;
+			list-style: none;
+			float: left;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}

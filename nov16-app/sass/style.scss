@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'reset';
+//@import 'fontawesome';
+
+main {
+	background-color: lightgray;
+	width: 25%;
+	height: 550px;
+	border-radius: 15px;
+	padding: 2vw;
+	margin: 5vw;
+
+		#container {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+
+		h1 {
+			font-size: 1.5em;
+			padding: 1vw;
+		}
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+
+			width: 80%;
+			height: 300px;
+			background-color: white;
+			border-radius: 5%;
+			div {
+				width: 30px;
+				height: 40px;
+				background: {
+					image: url('../img/kitten.png');
+					repeat: no-repeat;
+					size: cover;
+					position: center;
+				}
+			}
+
+		}
+		h3 {
+			font-size: 1em;
+			padding: .5vw;
+		}
+		input {
+			margin: .5vw;
+			padding: .5vw;
+		}
+		button {
+			margin: .5vw;
+			padding: .5vw;
+			background-color: dodgerblue;
+			border-radius: 4px;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+}
+
+/*HEADER STARTS HERE*/
+/*HEADER ENDS HERE*/
+/*STARTS HERE*/
+/*ENDS HERE*/
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/

@@ -1,0 +1,18 @@
+/* sass goes here */
+/*
+@mixin - advanced placeholders(accept arguments)
+@media - media queri
+@extend - % placeholders
+@include - mixins
+@import - importing css stylesheet
+@debug - output to console
+- not used often -
+@warn - similar to debug - more for team use
+@error - on team directive. mistake
+- not used often -
+*/
+body {
+  background-color: black;
+  color: rgba(212, 8, 161, 0.96);
+  font-size: 48px;
+}

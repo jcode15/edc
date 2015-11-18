@@ -1,0 +1,99 @@
+@import 'variables';
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3vw;
+  .scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30vw;
+    h3 {
+      z-index: 2;
+      font-weight: 100;
+      color: $navpink;
+      padding: 1vw 0;
+    }
+    i {
+      z-index: 2;
+      font-size: 3em;
+      color: $navpink;
+    }
+  }
+  #nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 99.5%;
+    margin: 0;
+    padding: .5vw 0;
+    background-color: $navpink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: {
+    bottom: 4px solid $btm-border;
+    top: 4px solid $topbrd-color;
+    right: 4px solid $rgh-border;
+    left: 4px solid $lft-border;
+      }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 3vw;
+      h1, h5 {
+        color: white;
+        margin: 0;
+      }
+      h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+      h5 {
+        font-weight: 100;
+      }
+    }
+  }
+  ul#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    list-style:none;
+    margin: 0 2vw;
+    padding: 0;
+  }
+  ul#nav li a {
+    text-decoration:none;
+    display: block;
+    padding: 1vw 3vw;
+    background: $purpleish;
+    color: $white;
+    border-top:2px solid $top-border;
+    border-right:2px solid $rgh-border;
+    border-bottom:2px solid $btm-border;
+    border-left:2px solid $lft-border;
+  }
+  ul#nav li a:hover {
+    background-color: $white;
+    color:#000;
+    border-top:2px solid #815444;
+    border-right:2px solid #c59888;
+    border-bottom:2px solid #c59888;
+    border-left:2px solid #815444;
+  }
+}
+
+
+
+
+
+
+
+

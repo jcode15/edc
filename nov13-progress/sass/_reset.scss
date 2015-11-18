@@ -1,0 +1,33 @@
+/* GLOBEL MARK UP goes here */
+$black: hsla(0, 0%, 9%, 1);
+$white: hsla(0, 0%, 96%, 1);
+
+body {
+	margin: 0;
+	font: {
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+	padding: 10vw 5vw;
+	background-color: $white;
+	color: $black;
+}
+ul, ol {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	list-style: none;
+	text-decoration: none;
+}

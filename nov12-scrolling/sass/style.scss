@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'reset';
+//@import 'fontawesome';
+
+
+$white: hsla(0, 0%, 96%, 1);
+$black: hsla(0, 0%, 9%, 1);
+body {
+	background-color: $white;
+	color: $black;
+	padding: 10vw 5vw;
+}
+/*HEADER STARTS HERE*/
+header {
+	background-color: gray;
+	color: $white;
+	img {
+			transition: all 200ms ease-in-out;
+		}
+	nav {
+		display: flex;
+		flex-direction: row;
+		h1 {
+			margin: 0 auto 0 0;
+			a {
+				display: inherit;
+				color: $white;
+			}
+		}
+		ul {
+			display: inherit;
+			li {
+				display: inherit;
+			}
+			a {
+				display: flex;
+				align-items: center;
+				padding: 10px;
+				color: $white;
+			}
+		}
+		img {
+			width: 85px;
+			height: auto;
+			transition: all 200ms ease-in-out;
+			animation: {
+			name: wiggle;
+			duration: 5s;
+			iteration-count: infinite;
+			//infinite so it doesnt stop
+			timing-function: ease-out;
+			//& linear, ease, ease-in, ease-out, ease-in-out;
+		}
+			}
+	}
+	&.fixie {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		img{
+			width: 65px;
+			height: auto;
+		}
+	}
+}
+/*HEADER ENDS HERE*/
+
+/*MAIN STARTS HERE*/
+main {
+	background-color: darken($white, 5);
+	padding: inherit;
+}
+/*MAIN ENDS HERE*/
+
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/
+
+@keyframes wiggle{
+	25%{
+		transform: rotate(45deg);
+	}
+	50%{
+		transform: rotate(-45deg)
+	}
+	75%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: rotate(-45deg)
+	}
+}

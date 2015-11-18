@@ -1,0 +1,61 @@
+/* GLOBEL MARK UP goes here */
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+ul, ol {
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	text-transform: uppercase;
+	font-size: 3em;
+	font-weight: 100;
+	color: inherit;
+	padding: 5vw;
+}
+h3 {
+	font-size: 2em;
+	font-weight: 100;
+	padding: 1.5vw;
+	color: $navpink;
+}
+a {
+	text-decoration: none;
+}
+.pg_marker {
+			
+	$ico: 3vw;
+	$icohalf: ($ico/2);
+	//$icothird: ($ico/3);
+	//width: $ico;
+	//height: $icohalf;
+	line-height: $icohalf;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		border: {
+			color: lightgray transparent transparent transparent;
+			width: 10px 10px 10px 10px;
+				  style: solid;
+			}
+		position: absolute;
+		top: 105%;
+		left: 43%;
+	}
+}
+@media screen and (max-width: 655px) {
+	.pg_marker {
+		&::after {
+			border: {
+				color: $bkgrdcolor transparent transparent transparent;
+				}
+			top: 250%; 
+		}
+	}
+}

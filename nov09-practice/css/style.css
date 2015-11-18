@@ -1,0 +1,78 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+}
+
+header {
+  background-color: pink;
+}
+
+header:before, header:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+h1 {
+  float: left;
+  font-size: 3em;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+}
+h1:hover {
+  background-color: red;
+}
+
+nav:before, nav:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+ul {
+  float: right;
+}
+
+ul:before, ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+li {
+  float: left;
+  list-style: none;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: hotpink;
+}

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+#top_header::before, #bottom_header::before, #top_header::after, #bottom_header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+main {
+  width: 50%;
+  height: 35vw;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  box-shadow: 0px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*
+
+oriontation butto:
+close
+minimize
+maximize
+
+address bar
+
+refresh button/stop (hover)
+
+foward and back buttons or arrows
+
+*/
+span {
+  display: inline-block;
+}
+span::before, span::after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#top_header, #bottom_header {
+  background-color: white;
+  padding: .5vw;
+}
+
+#top_header {
+  background-color: #f2f2f2;
+}
+
+.ot_btn {
+  float: left;
+}
+.ot_btn span {
+  color: yellow;
+  line-height: 3vw;
+  font-size: 1vw;
+  width: 1vw;
+}
+.ot_btn span::before, .ot_btn span::after {
+  width: 1.25vw;
+  text-align: center;
+}
+.ot_btn span::before {
+  content: '\f111';
+}
+.ot_btn span:hover::before {
+  content: '\f006';
+}
+.ot_btn span:first-child {
+  color: red;
+}
+.ot_btn span:last-child {
+  color: green;
+}
+
+.user {
+  float: right;
+  border: 1px solid black;
+  line-height: 3vw;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  padding: 0 .4vw;
+  border-radius: 4px;
+  display: inline-block;
+}
+.user::before, .user::after {
+  width: 1.75vw;
+  text-align: center;
+}
+
+header hr {
+  margin: 0;
+  border-width: 0 0 1px 0;
+}
+
+#bottom_header {
+  background-color: #ebebeb;
+}
+
+.nav_btns {
+  float: left;
+}
+.nav_btns span {
+  width: 3.5vw;
+  line-height: 3vw;
+  font-size: 1.5vw;
+}
+.nav_btns span::before, .nav_btns span::after {
+  width: 1.75vw;
+  text-align: center;
+}
+.nav_btns span::before {
+  content: '\f060';
+}
+.nav_btns span::after {
+  content: '\f061';
+}
+
+.refresh {
+  float: left;
+}
+.refresh span {
+  width: 1.75vw;
+  text-align: center;
+  line-height: 3vw;
+  font-size: 1.5vw;
+}
+.refresh span::before, .refresh span::after {
+  width: 1.75vw;
+  text-align: center;
+}
+.refresh span::before {
+  content: '\f021';
+}
+.refresh span:hover::before {
+  content: "";
+}
+
+.addr {
+  float: left;
+  width: calc(100% - 6vw);
+  line-height: 3vw;
+  font-size: 2vw;
+}
+.addr::before, .addr::after {
+  width: 2.25vw;
+  text-align: center;
+}
+
+.settings {
+  margin-left: .25vw;
+  float: left;
+}
+.settings span {
+  width: 1.75vw;
+  text-align: center;
+  line-height: 3vw;
+  font-size: 1.5vw;
+}
+.settings span::before, .settings span::after {
+  width: 1.75vw;
+  text-align: center;
+}
+.settings span::before {
+  content: '\f0c9';
+}

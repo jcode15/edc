@@ -1,0 +1,68 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+$color: (360/40);
+
+
+@for $i from 1 through 40 {
+	$hue: ($color * $i) -$color;
+	div:nth-child(#{$i}) {
+		background-color: hsla($hue, 30%, 60%, .5);
+     &::after {
+			content: '#{$i}';
+		}
+    }
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	div {
+		width: 33.3333%;
+		box-sizing: border-box;
+		padding: 10px 3em 10px 10px;
+		font-family: sans-serif;
+		position: relative;
+
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+		span {
+			display: block;
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+	}
+	div::before {
+	content: '';
+	display: block;
+	width: 3em;
+	height: 3em;
+	background-color: white;
+	border-radius: 0px 0px 0px 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+		}
+	div::after {
+		display: block;
+		width: 2em;
+		height: 2em;
+		text-align: center;
+		line-height: 2em;
+		font-size: 	1.5em;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	// div:nth-of-type(odd) {
+	// 	background-color: hsla(0, 0%, 0%, .3);
+	// }
+	// div:nth-of-type(even) {
+	// 	background-color: hsla(0, 0%, 0%, .1);
+	// }
+}

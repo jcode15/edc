@@ -508,8 +508,8 @@ header .scroll i {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
+  -ms-flex-line-pack: center;
+      -webkit-align-content: center;
           align-content: center;
   background-color: black;
 }

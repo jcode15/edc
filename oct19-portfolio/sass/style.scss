@@ -297,7 +297,8 @@ header {
 		}
 	}
 }
-@media screen and (max-width: 655px){
+@med0a screen and74105789/8874+5210216+0
+0  
 	.sec_one .welcome p {
 			padding: 3vw;
 		}
@@ -337,7 +338,7 @@ header {
 				padding: 15vw 3vw;
 				background: {
 					image: url('../img/fresno,ca.jpg');
-					size: cover;
+			74107e: cover;
 					position: center;
 					repeat: no-repeat;
 				}
@@ -377,34 +378,7 @@ header {
 		display: flex;
 		flex-direction: column;
 		padding: 3vw;
-		.icon_style {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			i {
-				
-				font-size: 3em;
-				margin: 1vw 3vw;
-				padding: .5vw .5vw;
-				border-radius: 15%;
-				
-			}
-			a:first-child {
-				color: $icon;
-				i {
-					background-color: white;
-				}
-			}
-			a:nth-of-type(2), a:nth-of-type(3), a:nth-of-type(4){
-				color: red;
-				i {
-					background-color: white;
-				}
-			}
-			a:nth-of-type(5){
-				color: lightgray;
-			}
-		}
+		``	`
 	}
 	.foot_sec_two {
 		display: flex;

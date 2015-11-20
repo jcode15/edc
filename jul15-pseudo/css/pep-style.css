@@ -1,0 +1,57 @@
+ul {
+	position: relative
+}
+#pep1 {
+	content: "";
+	display: block;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	border-radius: 50%;
+	border-width: 8px;
+	border-style: solid;
+	border-color: white;
+	position: absolute;
+	list-style: none;
+	-webkit-filter: drop-shadow(-8px 8px 4px hsla(0, 12%, 0%, 0.30));
+	z-index: 1;	
+
+}
+
+#pep2 {
+	display: block;
+	width: 302px;
+	height: 146px;
+	position: absolute;
+	list-style: none;
+	background-color: blue;
+	
+	border-radius: 150px 150px 0 0;
+	top: 8px;
+	left: 46px;
+	z-index: 5;
+}
+#pep3 {
+	display: block;
+	width: 302px;
+	height: 146px;
+	position: absolute;
+	top: 163px;
+	left: 46px;
+	list-style: none;
+	background-color: red;
+	border-radius: 0 0 150px 150px;
+	z-index: 5
+}
+#pep4 {
+	display: block;
+	width: 300px;
+	height: 20px;
+	position: absolute;
+	top: 48px;
+	background-color: black;
+	border-width: 2px 2px 50px 2px;
+	list-style: none;
+	z-index: 5;
+
+}

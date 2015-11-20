@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'reset';
+//@import 'fontawesome';
+
+html, body {
+	height: 100%;
+}
+#loginBox {
+	width: 20%;
+	background-color: lightblue;
+	padding: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	label {
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	input {
+		width: 80%;
+		font-size: 1.75em;
+		line-height: 1;
+		border: {
+			width: 1px;
+			style: solid;
+			color: gray;
+			radius: 4px;
+		}
+	}
+	button{
+		width: 80px;
+		background-color: gray;
+		color: white;
+		font-size: 1.25em;
+		border: {
+			width: 1px;
+			style: solid;
+			color: black;
+			radius: 4px;
+		}
+		padding: 3px 0;
+		margin-top: 10px; 
+			align-self: flex-start;
+		}
+}
+
+/*HEADER STARTS HERE*/
+/*HEADER ENDS HERE*/
+
+/*STARTS HERE*/
+/*ENDS HERE*/
+
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/

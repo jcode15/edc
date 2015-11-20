@@ -1,0 +1,55 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+  font-family: sans-serif;
+  font-weight: 200;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+textarea {
+  font-size: 1.5em;
+}
+
+.cta {
+  height: 35vw;
+  width: 100%;
+  background-image: url("http://placehold.it/350x150");
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+}

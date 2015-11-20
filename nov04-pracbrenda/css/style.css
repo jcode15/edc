@@ -1,0 +1,38 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+}
+
+h1 {
+  background-color: pink;
+  font-size: 3em;
+  float: left;
+}
+
+nav {
+  background-color: green;
+  float: right;
+}
+nav ul li {
+  font-size: 2em;
+  padding-right: 5%;
+  list-style: none;
+  float: left;
+}
+nav ul li a {
+  text-decoration: none;
+}

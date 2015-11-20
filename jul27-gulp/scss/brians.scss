@@ -1,0 +1,132 @@
+$main: hsla(246, 62%, 78%, 1);
+$top: 25px;
+$pad: 35px;
+$font: 130%;
+$pos: 100px;
+$width: 100%;
+
+body {
+}
+
+div:first-child {
+	width: $width;
+	height: 50px;
+	background-color: lightblue;
+}
+nav li {
+	display: inline-block;
+	float: right;
+	padding-left: $pad;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+li a {
+	position: relative;
+	top: $top;
+	right: $pos;
+	font-size: $font;
+	text-decoration: none;
+	color: $main;
+}
+
+header {
+	width: 100%;
+	height: $pos;
+	border-bottom: 2px solid $main;
+}
+
+header img {
+	position: relative;
+	top: $top;
+	left: 75px;
+	float: left;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+section ul li {
+	float: left;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+section:nth-of-type(2) {
+	background-color: $main;
+	width: $width;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+}
+section h1 {
+	font-size: 250%;
+}
+
+section p {
+	float: left;
+	width: 50%;
+}
+
+div a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 150%;
+	color: white;
+	margin: 30px;
+	padding-left: 130px;
+}
+
+div:nth-of-type(2) {
+	display: inline;
+	float: right;
+	width: 50%;
+	height: 75px;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+section:nth-of-type(2) {
+	width: $width;
+	height: 150px;
+}
+
+section:nth-of-type(3) {
+	width: $width;
+	height: 500px;
+	background-color: lightgray;
+	border-bottom: 3px solid gray;
+}
+section:nth-of-type(3) li{
+	display: inline;
+	width: 15.5%;
+	height: 450px;
+	padding: 0;
+	margin: 0;
+}
+
+section:nth-of-type(3) p {
+	width: 15.5%;
+	text-align: center;
+	font-size: 50%;
+}
+
+section:nth-of-type(3) img {
+	border: 2px solid gray;
+	border-radius: 50%;
+}

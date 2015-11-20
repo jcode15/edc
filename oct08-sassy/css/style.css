@@ -1,0 +1,39 @@
+/* sass goes here */
+main div {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 3%;
+}
+main div:nth-of-type(1) {
+  background-color: #6abf40;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: #8cd99f;
+  padding: 5px 50px 50px;
+  color: #8cd99f;
+}
+main div:nth-of-type(1)::before {
+  content: "20deg";
+}
+
+main div:nth-of-type(2) {
+  border-width: 5px;
+  border-style: ridge;
+  border-color: #267326;
+  padding: 5px 50px 50px;
+  color: #267326;
+  background-color: #8cd99f;
+}
+
+main div:nth-of-type(3) {
+  background-color: #bf6a40;
+}
+
+main div:nth-of-type(4) {
+  background-color: #267326;
+}
+
+main div:last-of-type {
+  background-color: #40bf40;
+}

@@ -1,0 +1,106 @@
+@import "variables";
+@import "reset";
+// @import "fontawesome";
+
+/* HEADER STARTS here */
+header {
+	display: flex;
+	flex-direction: column;
+	//justify-content: center;
+	align-items: center;
+	h1 {
+		padding: 1vw 0;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		color: $black;
+		width: 100%;
+		height: auto;
+		padding: 20vw 0;
+		margin-top: 5vw;
+		background: {
+			image: url('../img/guardians.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+		}
+		ul {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			background-color: $navcolor;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			h1 {
+				width: 100%;
+				font-size: 1.5em;
+				margin: 0;
+			}
+			li {
+				padding: .5vw 0;
+				a {
+					padding: 0 1vw;
+				}
+			}
+
+		}
+	}
+}
+/* HEADER ENDS here */
+
+/*MAIN STARTS HERE*/
+
+main {
+	div:first-child {
+		display: flex;
+		flex-wrap: wrap;
+		section {
+			width: 33.333333%;
+			text-align: center;
+			span {
+				display: block;
+				width: 35%;
+				height: (33vw/3);
+				background-color: pink;
+			}
+		}
+		section [id^='main-']{
+			width: 100%;
+			span {
+				height: 33vw;
+				float: left;
+		}
+	}
+
+
+
+		div:last-child {
+			display: flex;
+			section {
+				width: 50%;
+			}
+		}
+	}
+}
+/*MAIN Ends HERE*/
+$chars: bereet carina collector cosmo drax gamora garthan-saal groot howard-the-duck irani-rael korath-thak kraglin-obfonteri nebula peter-quill rhomann-dey rocket-racoon ronan yondu;
+
+@each $char in $chars {
+	$i: index($chars, $char);
+	section:nth-child(#{$i}){
+		span {
+			background-image: url('../img/bio-#{$char}.jpg');
+		}
+	}
+}
+
+span {
+	border-radius: 50%;
+	background: {
+		position: center;
+		size: cover;
+	}
+}

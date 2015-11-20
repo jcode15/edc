@@ -1,0 +1,180 @@
+@import"_variables.scss";
+
+a {
+	color: $colorpink;
+	text-decoration: none;
+	
+}
+.banner {
+	height: 440px;
+	background: {
+		image: url('../img/banner.jpg');
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+}
+
+.bannerheader {
+	background-color: $colorgray;
+	padding: 40px 0;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: $colorwhite;
+}
+.navbar {
+    margin-bottom: 0;
+    border: none;
+    padding: 20px 0;
+}
+
+#welcome {
+	h2 {
+		font-size: 125%;
+	}
+	h3 {
+		font-size: 110%;
+		margin-bottom: 50px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		border-bottom:1px solid $colorother;
+		padding: 12px 0;
+		&::before {
+			content: "\e013";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			text-align: center;
+			line-height: 20px;
+			background-color: $colorpink;
+			color: $colorwhite;
+			font-size: 18px;
+			text-decoration: none;
+			font-family: "Glyphicons Halflings";
+			font-weight: normal;
+			font-style: normal;
+			text-rendering: optimizelegibility;
+			-webkit-text-rendering: optimizelegibility;
+			-moz-text-rendering: optimizelegibility;
+			-ms-text-rendering: optimizelegibility;
+			-o-text-rendering: optimizelegibility;
+			-webkit-font-smoothing: anianliased;
+			-moz-font-smoothing: anianliased;
+			-ms-font-smoothing: anianliased;
+			-o-font-smoothing: anianliased;
+			font-smoothing: anianliased;
+		}
+		a {
+			vertical-align: top;
+		}
+	}
+}
+
+#promo {
+	.content {
+		text-align: center;
+	}
+	i {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		background-color: $colorpink;
+		font-size: 30px;
+		color: $colorwhite;
+	}
+	h2 {
+		font-size: 125%;
+	}
+}
+
+.btn-clearcut {
+	display: block;
+	color: $colorwhite;
+	background-color: $colorpink;
+	border: 2px solid $colorpink;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-top: 20px;
+	a:hover {
+		color: white;
+		background: lighten($colorpink), 10);
+		text-decoration: none;
+	}
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 0;
+}
+.content {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#midsec {
+	background-color: $colorpink;
+	h2, a {
+		color: white;
+		font-size: 125%;
+	}
+	h3 {
+		font-size: 110%;
+		margin-bottom: 50px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		border-bottom:1px solid $colorother;
+		color: white;
+		padding: 12px 0;
+		&::before {
+			content: "\e013";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			text-align: center;
+			line-height: 20px;
+			background-color: $colorpink;
+			color: $colorwhite;
+			font-size: 18px;
+			text-decoration: none;
+			font-family: "Glyphicons Halflings";
+			font-weight: normal;
+			font-style: normal;
+			text-rendering: optimizelegibility;
+			-webkit-text-rendering: optimizelegibility;
+			-moz-text-rendering: optimizelegibility;
+			-ms-text-rendering: optimizelegibility;
+			-o-text-rendering: optimizelegibility;
+			-webkit-font-smoothing: anianliased;
+			-moz-font-smoothing: anianliased;
+			-ms-font-smoothing: anianliased;
+			-o-font-smoothing: anianliased;
+			font-smoothing: anianliased;
+		}
+		a {
+			vertical-align: top;
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+}

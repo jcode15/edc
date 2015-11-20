@@ -1,0 +1,63 @@
+/*
+Error: Illegal nesting: Only properties may be nested beneath properties.
+        on line 165 of c:/Users/student/Desktop/edc/aug10-flexbox/scss/right-style.scss
+
+160: 
+161: main {
+162: 	display: flex;
+163: 	aside: {
+164: 		flex: 1;
+165: 		div#archives div {
+166: 			
+167: 		}
+168: 	}
+169: 	article {
+170: 		flex: 3;
+
+Backtrace:
+c:/Users/student/Desktop/edc/aug10-flexbox/scss/right-style.scss:165
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:57:in `visit_root'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:35:in `css_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:278:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+c:/Ruby22-x64/bin/compass:23:in `load'
+c:/Ruby22-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 165 of c:/Users/student/Desktop/edc/aug10-flexbox/scss/right-style.scss\A \A 160: \A 161: main {\A 162: 	display: flex;\A 163: 	aside: {\A 164: 		flex: 1;\A 165: 		div#archives div {\A 166: 			\A 167: 		}\A 168: 	}\A 169: 	article {\A 170: 		flex: 3;"; }

@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'layout';
+
+.secone {
+	background-color: white;
+	width: 100%;
+	height: 440px;
+	.secdivone {
+		float: left;
+		width: 25%;
+		h3 {
+			color: $maincol;
+			font-size: 30px;
+		
+			text-transform: uppercase;
+			padding: 10px 0 35px 55px;
+		}
+		p {
+			padding-left: 45px;
+		}
+		 i {
+		 	background-color: black;
+			width: 20px;
+			height: 20px;
+			line-height: 10px;
+			font-size: 10px;
+			color: $pcol;
+			}
+		a {
+			color: $pcol;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: $pcol;
+				}
+
+		&::before, &::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+
+.divbtn {
+		display: block;
+		background-color: $maincol;
+		border: 2px solid $maincol;
+		border-radius: 5px;
+		width: 130px;
+		height: 35px;
+		margin-top: 25px;
+		position: absolute;
+		left: 75px;
+		a {
+		text-transform: uppercase;
+		color: white;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+    }
+    a:hover {
+		text-decoration: underline;
+		color: white;
+			}
+}
+
+	.secdivtwo {
+		float: left;
+		width: 75%;
+	h2 {
+		color: $maincol;
+		font-size: 50px;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	p {
+		color: $pcol;
+		padding-right: 35px;
+	}
+	&::before, &::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+}

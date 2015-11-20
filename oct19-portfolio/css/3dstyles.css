@@ -1,0 +1,117 @@
+/* VARIABLES goes here */
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 3vw;
+}
+header .scroll {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30vw;
+}
+header .scroll h3 {
+  z-index: 2;
+  font-weight: 100;
+  color: #ff1a79;
+  padding: 1vw 0;
+}
+header .scroll i {
+  z-index: 2;
+  font-size: 3em;
+  color: #ff1a79;
+}
+header #nav-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 99.5%;
+  margin: 0;
+  padding: .5vw 0;
+  background-color: #ff1a79;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid #470028;
+  border-top: 4px solid #fa9ed2;
+  border-right: 4px solid #d74296;
+  border-left: 4px solid #d10076;
+}
+header #nav-wrapper .heading {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3vw;
+}
+header #nav-wrapper .heading h1, header #nav-wrapper .heading h5 {
+  color: white;
+  margin: 0;
+}
+header #nav-wrapper .heading h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+header #nav-wrapper .heading h5 {
+  font-weight: 100;
+}
+header ul#nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1em;
+  list-style: none;
+  margin: 0 2vw;
+  padding: 0;
+}
+header ul#nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 1vw 3vw;
+  background: #921667;
+  color: white;
+  border-top: 2px solid #fa94ce;
+  border-right: 2px solid #d74296;
+  border-bottom: 2px solid #470028;
+  border-left: 2px solid #d10076;
+}
+header ul#nav li a:hover {
+  background-color: white;
+  color: #000;
+  border-top: 2px solid #815444;
+  border-right: 2px solid #c59888;
+  border-bottom: 2px solid #c59888;
+  border-left: 2px solid #815444;
+}

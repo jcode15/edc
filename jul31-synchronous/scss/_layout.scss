@@ -1,0 +1,165 @@
+body {
+	font-family: 'Lato', sans-serif, Ariel;
+}
+
+h2 {
+			letter-spacing: -2px;
+		    text-transform: uppercase;
+		    font-weight: 900;
+		    color: #323338;
+		    padding: 0;
+		    margin: 0;
+		}
+		p {
+			font-size: 13px;
+			line-height: 180%;
+			color: #525252;
+		}
+		a {
+			font-size: 13px;
+			text-decoration: none;
+			color: #525252;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 450px;
+		background: {
+		    image: url("../img/banner.jpg");
+		    }
+	h1{
+		flex: none;
+		font-size: 300%;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-align: center;
+		text-transform: $up;
+		color: $maincol;
+		margin: 6% 0 0 0;
+	  }
+	  h2 {
+	  	flex: none;
+	  	font-size: 100%;
+	  	font-weight: 300;
+	  	text-align: center;
+	  	text-transform: $up;
+	  	color: #8e8588;
+	  }
+	  ul {
+	  	flex: none;
+	  	display: flex;
+	  	flex-direction: row;
+	  	justify-content: center;
+	  	align-items: center;
+	  	margin: 6%;
+	  }
+
+	  li {
+	  	list-style: none;
+	  	font-size: 80%;
+	  	margin-right: 5%;
+	  }
+	  a {
+	  	color: $maincol;
+	  	font-weight: 300;
+	  	text-decoration: none;
+	  	text-transform: $up;
+	  }
+	  a:hover {
+			color: white;
+		}
+	  &::before, &::after {
+	  	content: "";
+	  	display: block;
+	  	clear: both;
+	  }
+}
+
+.button {
+	  	display: block;
+	  	background-color: $maincol;
+	  	border: 1px solid $maincol;
+	  	border-radius: 5px;
+	  	text-align:  center;
+	  	color: white;
+	  	padding-top: 13px;
+	  	width: 150px;
+	  	height: 32px;
+	  	&:hover {
+	  		text-decoration: underline;
+	  	}
+}
+.sectwo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: $backgroundgray;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	.one {
+		flex: 2;
+		margin: 2%;
+		h2 {
+			margin-bottom: 15%;
+		}
+		p {
+			margin: 15% 0 15% 0;
+		}
+	}
+	.two {
+		flex: 4;
+		margin: 1%;
+		h2 {
+			margin-bottom: 3%;
+		}
+		img {
+			width: 465px;
+			height: 203px;
+		}
+		
+	}
+
+	.three {
+		flex: 2;
+		margin: 2%;
+	}
+}
+
+.btntwo {
+	background: $maincol;
+	border: 1px solid $maincol;
+	border-radius: 4px;
+	color: white;
+	padding: 10px 14px;
+	margin: 15% 0 5% 3%;
+}
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: $backgroundgray;
+	border-top: 1px solid gray;
+	border-width: 80%;
+	padding: 3%;
+	margin: 0;
+	p {
+		font: 50px;
+		color: $pcol;
+		text-align: center;
+		text-transform: $up;
+		margin: 0;
+	}
+	small {
+		color: $hotpink;
+	}
+	p:nth-of-type(2){
+		margin: 0;
+		color: purple;
+	}
+}

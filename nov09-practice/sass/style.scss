@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'reset';
+@import 'fontawesome';
+
+header {
+	background-color: pink;
+}
+header:before, header:after{
+	display: block;
+	content: " ";
+	clear: both;
+}
+h1 {
+	float: left;
+	font-size: 3em;
+	text-transform: uppercase;
+	border: 1px solid black;
+	padding: 20px;
+	margin-top: 20px;
+	&:hover {
+		background-color: red;
+	}
+}
+nav:before, nav:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+ul {
+	float: right;
+}
+ul:before, ul:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+li {
+	float: left;
+	list-style: none;
+	padding-right: 20px;
+}
+a {
+	text-decoration: none;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+main {
+	background-color: black;
+	color: white;
+}
+
+footer {
+	background-color: hotpink;
+}

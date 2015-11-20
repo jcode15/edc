@@ -1,0 +1,231 @@
+/*put your scss here*/
+@import 'variables';
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: {
+		image: url('../img/img01.jpg');
+		repeat: no-repeat;
+		color: black;
+
+	}
+}
+
+nav > a {
+		text-decoration: none;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 200%;
+		font-weight: 700;
+		color: $white;
+		padding: 2%;
+		margin-right: auto;
+
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+header {
+	width: 80%;
+	background: {
+		color: $hotpink;
+	}
+	margin: 3% 0 0 0;
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 5%;
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 0;
+		li {
+			flex: none;
+			list-style: none;
+			a {
+				display: block;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-weight: 100;
+				text-align: center;
+				text-decoration: none;
+				color: $white;
+				padding: 10%;
+				margin: 10%;
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+				white-space: nowrap;
+
+			}
+		}
+	}
+
+	}
+}
+.contain {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 45%;
+}
+.concontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+
+.containerone {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: no-wrap;
+	background: {
+		color: $white;
+	}
+	.head2 {
+		flex: 1;
+		width: 100%;
+		h2 {
+		flex: 1;
+		font-size: 200%;
+		font-weight: 600;
+		margin: 10% 0 0 5%;
+	 }
+	}
+	.boxcontainer {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		margin: 5%;
+	}
+}
+h3 {
+	font-weight: 400;
+	font-size: 180%;
+}
+p {
+	display: block;
+	font-weight: 300;
+	line-height: 180%;
+	margin: 0 5% 5% 5%;
+}
+.containerrowtwo {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	background: {
+		color: $white;
+	}
+
+	.boxtoo {
+		flex: 1;
+		margin: 5%;
+	}
+}
+
+.box > a, .boxtoo a {
+	display: inline-block;
+	background-color: $hotpink;
+	width: 155px;
+	height: 46px;
+	line-height: 40px;
+	font-size: 110%;
+	font-weight: 300;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $white;
+	padding: 1%;
+
+}
+div.img1 {
+	width: 320px;
+	height: 180px;
+	background: {
+		image: url('../img/img02.jpg');
+		repeat: no-repeat;
+	}
+}
+div.img2 {
+	width: 320px;
+	height: 180px;
+	background: {
+		image: url('../img/img03.jpg');
+		repeat: no-repeat;
+	}
+}
+div.img3 {
+	width: 320px;
+	height: 180px;
+	background: {
+		image: url('../img/img04.jpg');
+		repeat: no-repeat;
+	}
+}
+div.img4 {
+	width: 320px;
+	height: 180px;
+	background: {
+		image: url('../img/img05.jpg');
+		repeat: no-repeat;
+	}
+}
+div.img5 {
+	width: 320px;
+	height: 180px;
+	background: {
+		image: url('../img/img06.jpg');
+		repeat: no-repeat;
+	}
+}
+div.img6 {
+	width: 320px;
+	height: 180px;
+	background: {
+		image: url('../img/img07.jpg');
+		repeat: no-repeat;
+	}
+}
+.concontainertwo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+}
+.containertwo {
+	background-color: $white;
+		width: 90%;
+		h2 {
+		flex: 1;
+		font-size: 200%;
+		font-weight: 600;
+		margin: 5% 0 2% 5%;
+	}
+}
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	width: 90%;
+	padding: 6%;
+	p {
+		color: $white;
+		span {
+			color: $hotpink;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+/*put your scss here*/
+.clearfix::before, main::before, .clearfix::after, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bubble, .post, .rightcol {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+aside {
+  width: 200px;
+  float: left;
+}
+
+article {
+  width: calc( 100% - 400px );
+  float: left;
+}
+
+body {
+  background-color: teal;
+}
+
+h1 {
+  color: #00e6e6;
+}
+
+h2 {
+  color: #004d4d;
+}
+
+header {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/1/18/Rain_clouds.JPG");
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 40px 20px 20px;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+main {
+  border-top: 1px solid #004d4d;
+}
+
+aside {
+  padding: 0 20px;
+}
+
+article {
+  padding: 0 40px;
+}
+
+footer {
+  background-color: #004d4d;
+  padding: 40px 20px;
+}
+footer h3 {
+  margin: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.post {
+  border-bottom: 2px solid #00e6e6;
+  border-top: 2px solid #004d4d;
+  padding: 40px;
+}
+.post:first-child {
+  border-top: none;
+}
+.post:last-child(4) {
+  border-bottom: none;
+}

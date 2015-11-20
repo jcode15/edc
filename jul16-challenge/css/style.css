@@ -1,0 +1,103 @@
+.clearfix::before,
+.clear::after  {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+header {
+	display: block;
+	background-color: hsla(200, 40%, 40%, 1);
+	font-size: 200%;
+	padding: 20px 20px 20px 20px;
+}
+#hero {
+	background-image: url("http://placehold.it/1000x300");
+	padding: 100px 20px 50px;
+
+}
+hgroup h1{
+	font-size: 350%;
+	margin: 0;
+}
+hgroup h2 {
+	margin: 0 0 0 0;
+}
+main {
+	width: 75%;
+	height: auto;
+	float: left;
+}
+article {
+	padding: 0 10px 20px 20px;
+
+}
+article #art {
+	float: left;
+}
+aritcle #art2{
+	float: right;
+}
+#art img {
+    float: left;
+    margin-right: 10px;
+}
+#art2 img {
+	float: right;
+	margin-left: 10px;
+
+}
+
+aside {
+	width: 25%;
+	height: auto;
+	float: right;
+	padding: 0 10px 20px 20px;
+}
+nav ul{
+	float: right;
+	list-style-position: inside;
+	border-bottom: 1px solid lightgray;
+	line-height: 1.5;
+
+}
+
+ a {
+	display: inline-block;
+	left-margin: 20px;
+	text-decoration: none;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 10px;
+}
+ol li {
+	border-bottom: 1px solid lightgray;
+	list-style-position: inside;
+	line-height: 1.5;
+	float: right;
+}
+footer {
+	 background-color: lightgray;
+	 color: white;
+	 padding: 0 20px;
+	 font-size: 80%;
+}
+footer p {
+	float: left;
+}
+#bug {
+	float: right;
+}

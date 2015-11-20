@@ -1,0 +1,81 @@
+/*put your scss here*/
+$btn-size: 8px;
+
+.btn {
+	display: inline-block;
+	padding: $btn-size $btn-size*2;
+	border: 1px solid gray;
+	background-color: lightgray;
+	&.btn-lg {
+		$btn-size: $btn-size * 2;
+		padding: $btn-size $btn-size*2;
+		font-size: $btn-size * 2;
+		border-width: $btn-size - 8;
+		border-radius: $btn-size * 4;
+	}
+	&.btn-sm {
+		$btn-size: $btn-size / 2;
+		padding: $btn-size $btn-size * 2;
+		font-size: $btn-size * 2;
+		border-width: $btn-size - 2;
+		border-radius: $btn-size * 3;
+	}
+}
+
+$section-bg: pink;
+$font-clr: #101010;
+$bg-brightness: lightness($section-bg);
+
+section {
+	background-color: $section-bg;
+	color: $font-clr;
+	@if $bg-brightness > 15% and $bg-brightness< 30% {
+		color: lighten($font-clr, 50);
+	}@else if $bg-brightness < 15% {
+		color: brighten($font-clr, 75);
+	}
+	/*background-color: $section-bg;
+	@if $hue >= 300deg {
+		color: white;
+	}
+	@else if $hue >= 200deg and $hue <= 300deg {
+		color: yellow;
+	}
+	@else {
+		color: black;
+	}
+	/*background-color: $section-bg;
+	color: white;
+	@if $section-bg == yellow {
+		color: black;
+		font-size: 110%;
+	}@else if $section-bg == red {
+		color: blue;
+		font-size: 200%;
+	}@else {
+		color: white;
+		font-size: 100%;
+	}*/
+}
+
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+aside li {
+	line-height: 3;
+	list-style: none;
+	border-width: 0 10px 0 0;
+	border-style: solid;
+	padding-left: 20px;
+	@for $i from 1 to 20 {
+		$deg: $i * 36;
+		$bg-clr: hsla($deg, 50%, 50%, 1);
+		&:nth-of-type(#{$i}){
+			background-color: lighten($bg-clr, 20);
+			color: $bg-clr;
+		}
+	}
+}

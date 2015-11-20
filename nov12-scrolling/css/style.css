@@ -1,0 +1,135 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #171717;
+  padding: 10vw 5vw;
+}
+
+/*HEADER STARTS HERE*/
+header {
+  background-color: gray;
+  color: whitesmoke;
+}
+header img {
+  transition: all 200ms ease-in-out;
+}
+header nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header nav h1 {
+  margin: 0 auto 0 0;
+}
+header nav h1 a {
+  display: inherit;
+  color: whitesmoke;
+}
+header nav ul {
+  display: inherit;
+}
+header nav ul li {
+  display: inherit;
+}
+header nav ul a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: whitesmoke;
+}
+header nav img {
+  width: 85px;
+  height: auto;
+  transition: all 200ms ease-in-out;
+  -webkit-animation-name: wiggle;
+          animation-name: wiggle;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+header.fixie {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header.fixie img {
+  width: 65px;
+  height: auto;
+}
+
+/*HEADER ENDS HERE*/
+/*MAIN STARTS HERE*/
+main {
+  background-color: #e8e8e8;
+  padding: inherit;
+}
+
+/*MAIN ENDS HERE*/
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/
+@-webkit-keyframes wiggle {
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  75% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+@keyframes wiggle {
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  75% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}

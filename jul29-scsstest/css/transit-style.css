@@ -1,0 +1,153 @@
+/*@function padding-calc($sum-num, $another-num);
+@return $sum-num + $another-num;*/
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://download.unsplash.com/39/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+  background-size: 1400px 900px;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+header h1 {
+  font-size: 160%;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+header h2 {
+  font-size: 400%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 437px;
+}
+header p {
+  font-size: 140%;
+  text-align: center;
+  position: absolute;
+  top: 220px;
+  left: 428px;
+  color: white;
+}
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header img {
+  padding: 0;
+  margin: 0;
+}
+
+header ul {
+  float: right;
+  position: relative;
+  top: 10px;
+  margin: 0;
+}
+header ul li {
+  float: left;
+  display: inline;
+  padding: 20px;
+}
+header ul a {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 130%;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  height: 42px;
+  color: white;
+  font-size: 25px;
+  border-radius: 30px;
+  background-color: lightblue;
+  position: absolute;
+  top: 284px;
+  left: 545px;
+  padding-left: 50px;
+  margin: 0;
+}
+.button a.button {
+  text-decoration: none;
+}
+.button::before, .button::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  width: 100%;
+  height: 500px;
+}
+section h4 {
+  font-size: 20px;
+  text-align: center;
+  color: lightgray;
+}
+section h3 {
+  text-align: center;
+  font-size: 45px;
+  color: darkgray;
+}
+section p {
+  text-align: center;
+}
+
+section > p:nth-of-type(1) {
+  font-size: 20px;
+  color: lightgray;
+  margin-bottom: 130px;
+}
+
+section div {
+  float: left;
+  border: 3px solid black;
+  width: 25%;
+  margin: 45px;
+  padding: 0;
+}
+
+i {
+  font-size: 50px;
+}
+
+.fa-cloud {
+  background-color: #3aaed4;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  padding: 70px;
+}
+
+.fa-desktop {
+  background-color: #aed43a;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  padding: 70px;
+}
+
+.fa-rocket {
+  background-color: #d43a61;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  padding: 70px;
+}
+
+footer p {
+  background-color: lightgray;
+}

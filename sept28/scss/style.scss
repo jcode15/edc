@@ -1,0 +1,36 @@
+#outside_container {
+	display: flex;
+	flex-direction: column;
+}
+
+#outside_one {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+
+.h1_input_update {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#input_box_update_new {
+	margin-top: 10px;
+}
+
+#inside_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+ul {
+	background-color: gray;
+	width: 200px;
+	height: 600px;
+}
+li {
+	background-color: blue;
+	color: white;
+}

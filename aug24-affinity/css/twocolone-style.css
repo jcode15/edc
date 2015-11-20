@@ -1,0 +1,429 @@
+/*put your scss here*/
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-image: url("../img/img02.png");
+  background-position: center;
+  background-repeat: repeat;
+  color: rgba(255, 255, 255, 0.95);
+}
+body h2 {
+  font-weight: 100;
+}
+
+.bigblock {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.logo h1 {
+  font-family: 'Allura', cursive;
+  font-size: 650%;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 10%;
+}
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 89%;
+  background-image: url("../img/img06.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+header ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 180px;
+  height: 62px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+header ul li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+}
+header ul li:nth-of-type(3) {
+  background-color: rgba(0, 98, 107, 0.95);
+}
+
+div.mainblock {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 89%;
+  height: 1400px;
+  margin: 0;
+}
+div.mainblock .blockone {
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+div.mainblock .blockone h2 {
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  family-weight: 100;
+  font-size: 30pt;
+  color: rgba(41, 41, 41, 0.95);
+  margin: 5%;
+}
+div.mainblock .blockone p {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 10%;
+  color: rgba(82, 82, 82, 0.95);
+}
+div.mainblock .blockone a {
+  padding-top: 0;
+  margin: 0 0 20% 15%;
+}
+div.mainblock .blockone .btn {
+  display: block;
+  width: 174px;
+  height: 50px;
+  margin-top: 30px;
+  background: url("../img/img01.png") repeat;
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 150%;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.95);
+}
+div.mainblock .blocktwo {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 1%;
+}
+div.mainblock .blocktwo h2 {
+  height: 50px;
+  background: url("../img/img01.png") repeat;
+  margin-bottom: 20px;
+  padding: 0px 0px 0px 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: rgba(255, 255, 255, 0.95);
+}
+div.mainblock .blocktwo p {
+  color: rgba(82, 82, 82, 0.95);
+}
+div.mainblock .blocktwo ul {
+  margin-bottom: 35%;
+}
+div.mainblock .blocktwo ul li {
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.96);
+}
+div.mainblock .blocktwo ul li a {
+  display: block;
+  padding: 0px 0px 0px 30px;
+  background: url("../img/img03.png") no-repeat left top;
+  text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: rgba(82, 82, 82, 0.95);
+}
+div.mainblock .blockthree {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 1%;
+}
+div.mainblock .blockthree h2 {
+  height: 50px;
+  background: url("../img/img10.png") no-repeat right top;
+  margin-bottom: 20px;
+  padding: 0px 0px 0px 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: rgba(255, 255, 255, 0.95);
+}
+div.mainblock .blockthree p {
+  color: rgba(82, 82, 82, 0.95);
+}
+div.mainblock .blockthree ul {
+  margin-bottom: 35%;
+}
+div.mainblock .blockthree ul li {
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+}
+div.mainblock .blockthree ul li a {
+  display: block;
+  padding: 0px 0px 0px 30px;
+  background: url("../img/img03.png") no-repeat left top;
+  text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: rgba(82, 82, 82, 0.95);
+}
+
+div.feimg {
+  float: left;
+  width: 320px;
+  height: 270px;
+  margin: 5%;
+  background-image: url("../img/pics02.jpg");
+  background-repeat: no-repeat;
+}
+div.feimg::before, div.feimg ::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+div.heimg {
+  float: left;
+  width: 320px;
+  height: 270px;
+  margin: 5%;
+  background-image: url("../img/pics03.jpg");
+  background-repeat: no-repeat;
+}
+div.heimg::before, div.heimg ::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+section {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+          -webkit-align-content: center;
+          align-content: center;
+  padding: 5%;
+}
+section .secblock {
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  color: rgba(255, 255, 255, 0.95);
+}
+section .secblock h2 {
+  font-family: 'Oswald', san-serif;
+  font-size: 180%;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+section .secblock p {
+  line-height: 180%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+section div.secblocktwo {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  color: rgba(255, 255, 255, 0.95);
+}
+section div.secblocktwo h2 {
+  font-family: 'Oswald', san-serif;
+  font-size: 180%;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-left: 12%;
+  margin: 0 0 10% 12%;
+}
+section div.secblocktwo ul {
+  text-decoration: none;
+}
+section div.secblocktwo ul li {
+  padding: 15px 0px 15px 0px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  border-top: solid 1px #ac6035;
+  list-style: none;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+section div.secblocktwo ul li a {
+  display: block;
+  padding: 0px 0px 0px 30px;
+  background: url("../img/img09.png") no-repeat left top;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+}
+section div.secblockthree {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  color: rgba(255, 255, 255, 0.95);
+}
+section div.secblockthree h2 {
+  font-family: 'Oswald', san-serif;
+  font-size: 180%;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 2% 0 10% 12%;
+}
+section div.secblockthree ul {
+  text-decoration: none;
+}
+section div.secblockthree ul li {
+  padding: 15px 0px 15px 0px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  border-top: solid 1px #ac6035;
+  list-style: none;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+section div.secblockthree ul li li:nth-of-type(1) {
+  border: none;
+}
+section div.secblockthree ul li a {
+  display: block;
+  padding: 0px 0px 0px 30px;
+  background: url("../img/img09.png") no-repeat left top;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.lastimg {
+  float: left;
+  width: 190px;
+  height: 130px;
+  border: 5px solid rgba(255, 255, 255, 0.95);
+  background-image: url("../img/pics05.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5%;
+}
+.lastimg::before, .lastimg ::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 126px;
+  text-align: center;
+  background-image: url("../img/img01.png");
+  background-position: center;
+}
+footer p {
+  color: rgba(172, 114, 83, 0.96);
+}

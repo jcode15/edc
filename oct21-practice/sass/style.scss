@@ -1,0 +1,103 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/*HEADER STARTS here */
+header {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		ul {
+			display: flex;
+			li {
+				padding: 1vw;
+			}
+		}
+	}
+	.back_img {
+		padding: 30vw;
+		background: {
+			image: url('../img/guardians.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+		}
+	}
+}
+/*HEADER ENDS here */
+/*SECTION STARTS here */
+.sec_one {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1vw 0;
+	div {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 50%;
+		padding-bottom: 1vw;
+		img {
+			width: 25%;
+			height: 270px;
+			padding-left: 2vw;
+		}
+		h1, p {
+			padding-left: 1vw;
+		}
+		.inside_container {
+			display: flex;
+			flex-direction: column;
+			h1, p {
+				margin: 0;
+			}
+		}
+	}
+}
+/*SECTION ENDS here */
+
+/*DL SECTION START*/
+.sec_dl {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	.dl_one, .dl_two {
+		padding: 5vw;
+	}
+	dd {
+		padding-bottom: 1vw;
+	}
+}
+/*DL SECTION ENDS*/
+
+/*FOOTER STARTS HERE*/
+footer {
+	background: lightgray;
+	span {
+		color: hotpink;
+	}
+}
+/*FOOTER ENDS HERE*/
+
+.sec_one div {
+	display: block;
+	img {
+		float: right;
+	}
+
+}
+
+@media screen and (max-width: 34em){
+	.sec_one {
+		display: flex; 
+		flex-direction: cloumn;
+		justify-content: center;
+		align-items: center;
+		div {
+			width: 100%;
+			img {
+				height: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 38px;
+  border-top: 2px;
+  font-size: 150%;
+  margin: 0;
+}
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header h1 {
+  float: left;
+  font-size: 100%;
+  color: #676767;
+}
+header ul {
+  float: right;
+}
+
+header li {
+  float: left;
+  display: inline;
+  font-size: 60%;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+header a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+section {
+  width: 100%;
+  height: 700px;
+}
+
+section:nth-of-type(1) img {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  /* for IE 6 */
+}
+
+section:nth-of-type(1) h1 {
+  color: white;
+  text-align: center;
+  font-size: 500%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+}
+
+section:nth-of-type(1) p {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  bottom: 300px;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  font-size: 250%;
+  color: white;
+  display: block;
+  height: 48px;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+  border-radius: 10px;
+  position: relative;
+  bottom: 255px;
+  left: 388px;
+}
+
+.button2 {
+  text-decoration: none;
+  text-align: center;
+  font-size: 250%;
+  color: white;
+  display: block;
+  height: 50px;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  position: relative;
+  bottom: 303px;
+  left: 647px;
+}
+
+section:nth-of-type(2) {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+section:nth-of-type(2) h2 {
+  font-size: 300%;
+  text-align: center;
+  color: #676767;
+  position: relative;
+  bottom: 120px;
+  margin: 0;
+  padding: 0;
+}
+section:nth-of-type(2) p {
+  text-align: center;
+  color: #676767;
+  position: relative;
+  bottom: 110px;
+  padding: 0;
+  margin: 0;
+}
+
+section:nth-of-type(3) {
+  width: 100%;
+}
+section:nth-of-type(3) p {
+  text-align: center;
+  color: #b3b3b3;
+}
+
+section:nth-of-type(3) div {
+  border: 2px solid lightgray;
+  border-width: 100px;
+  border-height: 100px;
+}

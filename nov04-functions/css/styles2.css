@@ -1,0 +1,17 @@
+header {
+  background-color: pink;
+}
+header:before, header:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+header h1 {
+  background-color: green;
+  padding-left: 5%;
+  float: left;
+}
+header nav {
+  background-color: red;
+  float: right;
+}

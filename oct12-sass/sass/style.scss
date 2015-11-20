@@ -1,0 +1,180 @@
+/* sass goes here */
+@import 'reset';
+
+%clearfix {
+	&::before, &::after {
+	content: "";
+	display: block;
+	clear: both;
+	}
+}
+
+%content {
+	padding: 50px 5vw;
+}
+
+.icon {
+	$ico: 3vw;
+	$icohalf: ($ico/2);
+	$icothird: ($ico/3);
+	$icocolor: hsla(0, 0%, 0%, .10);;
+	background-color: $icocolor;
+	width: $ico;
+	height: $icohalf;
+	line-height: $icohalf;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin-bottom: 3vw;
+	&::before {
+		content: "";
+		display: block;
+		border: {
+			color: transparent transparent $icocolor transparent;
+			width: $icohalf $icohalf $icothird $icohalf;
+			style: solid;
+		}
+		position: absolute;
+		bottom: 100%;
+	}
+	&::after {
+		content: "";
+		display: block;
+		border: {
+			color: $icocolor transparent transparent transparent;
+			width: $icothird $icohalf $icohalf $icohalf;
+			style: solid;
+		}
+		position: absolute;
+		top: 100%;
+
+	}
+}
+
+header {
+	@extend %content;
+	text-align: center;
+	color: white;
+	background: {
+		image: linear-gradient(hsla(0, 0%, 0%, .30), hsla(0, 0%, 0%, .30 )), url('../img/slide01.jpg');
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+
+	}
+	overflow: hidden;
+	h1 {
+	float: left;
+	}
+	a {
+		border: none;
+	}
+	h2 {
+		margin-top: 15vw;
+		margin-bottom: 15vw;
+		font-size: 3vw;
+		text-transform: uppercase;
+	}
+}
+
+
+
+nav {
+		@extend %clearfix;
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+	}
+}
+
+#about {
+	@extend %clearfix;
+	
+	@extend %content;
+	div {
+		width: 33%;
+		float: left;
+		margin-right: 6%;
+	}
+	img {
+		width: 60%;
+		height: auto;
+		float: right;
+	}
+}
+
+#promos {
+	@extend %clearfix;
+	div {
+		box-sizing: border-box;
+		@extend %content;
+		width: 33.333333%;
+		float: left;
+	}
+}
+
+#blog {
+	@extend %content;
+	background-color: hsla(0, 0%, 0%, .1);
+.grid {
+	@extend %clearfix;
+	div {
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+		background-color: white;
+	}
+	div:nth-of-type(3n) {
+		margin-right: 0;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		border-bottom: 20px solid hsla(0, 0%, 0%, .10); 
+	}
+	span {
+		padding: 2.5vw;
+		display: inline-block;
+	}
+	.btn {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	&:hover {
+		background-color: hsla(0, 0%, 0%, .09);
+	}
+
+}
+}
+}
+
+
+#contact {
+	& > div {
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+		@extend %content;
+	}
+	label {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	fieldset {
+		border: none;
+		padding: 0;
+		&:first-child {
+			label {
+			width: 50%;
+			}
+		}
+	}
+	input, textarea {
+				width: 100%;
+			}
+}

@@ -1,0 +1,49 @@
+body {
+	background-color: gray;
+}
+
+form {
+	background-color: hsla(61, 74%, 86%, .90);;
+	border: 3px solid hsla(0, 0%, 66%, .90);
+	width: 600px;
+	height: 350px;
+	border-radius: 15px;
+	position: absolute;
+	top: 25%;
+    left: 25%;
+}
+
+label {
+	display: block;
+	width: 100px;
+	padding: 18px 28px;
+	position: relative;
+	top: 14px;
+	font-size: 161%;
+	color: hsla(0, 0%, 66%, 0.9);
+}
+
+input[type=text] {
+	padding: 15px 187px; 
+	border: 2px solid #ccc; 
+    border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+input[type=text]:focus {
+	padding: 10px 10px;
+	border-color:#333; 
+	position: relative;
+}
+
+input[type=submit] {
+	padding: 17px 253px; 
+	background:#ccc; 
+	border:0 none;
+    cursor:pointer;
+	position: relative;
+	top: 40px;
+    left: 29px;
+    border-radius: 5px;
+     }
+

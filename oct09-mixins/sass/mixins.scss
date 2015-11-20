@@ -1,0 +1,62 @@
+/* sass goes here */
+
+$unitless: 13;
+$numerical: 37; 
+$string: 'Oakland Raiders baby!';
+$unit_of_measurement: 48px;
+$color_hot_pink: hsla(315, 93%, 43%, .96);
+
+
+$hue: 315;
+$sat: 93%;
+$lum: 43%;
+$alpha: .80;
+
+$color: hsla($hue, $sat, $lum, $alpha);
+$text: darken($color, 30);
+
+$width: 20vw;
+//@debug comparable(, $unitless);
+
+@mixin theme($bgc, $tc, $fs) {
+	background-color: $bgc;
+	color: $tc;
+	@if (unit($fs) != 'px') {
+		@warn 'This value needs to be a px value!';
+		}
+		@if(unit($fs) == 'em') {
+			@warn 'You provided an em value';
+		}
+		@if (unitless($fs) ){
+			@warn 'Please provide a unit of measurement';
+		}
+	@else {
+		font-size: $fs;
+		}
+		
+}
+
+// %clearfix {
+// 	&::before, &::after {
+// 		content: '';
+// 		display: block;
+// 		clear: both;
+// 	}
+// }
+
+/*
+@mixin - advanced placeholders(accept arguments)
+@media - media queri
+@extend - % placeholders
+@include - mixins
+@import - importing css stylesheet
+@debug - output to console
+- not used often -
+@warn - similar to debug - more for team use
+@error - on team directive. mistake
+- not used often -
+*/
+
+body {
+		@include theme(black, $color_hot_pink, $unit_of_measurement);
+}

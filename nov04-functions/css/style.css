@@ -1,0 +1,58 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+form input {
+  margin: 5px;
+}
+form div:nth-of-type(2) input[type="text"] {
+  width: 45px;
+}
+form label {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+form label input[type='text'] {
+  width: 30px;
+}
+
+/*HEADER STARTS HERE*/
+/*HEADER ENDS HERE*/
+/*STARTS HERE*/
+/*ENDS HERE*/
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/

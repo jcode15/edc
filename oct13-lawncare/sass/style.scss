@@ -1,0 +1,478 @@
+/* sass goes here */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import 'variables';
+@import 'reset';
+
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+
+@mixin content ($x) {
+	padding: 75px $x;
+}
+
+.floats {
+	.utiliy_nav {
+		@extend %clearfix;
+		background-image: url('../img/patt1.png');
+		
+		li {
+			display: inline-block;
+			float: left;
+			
+
+			i {
+				margin: 0 1vw;
+				float: left;
+				font-size: 2em;
+				color: $comcolor;
+			}
+			div {
+				float: left;
+			}
+		}
+		h1 {
+			float: left;
+			color: $logocolor;
+			margin-bottom: 0;
+		}
+		ul{
+			float: right;
+		}
+	 }
+	nav {
+		background-color: $black;
+		color: $white;
+			li {
+				display: inline-block;
+				font-size: 1.1em;
+				font-weight: 100;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $keycolor;
+				}
+			}
+			a {
+				display: block;
+				padding: 25px 30px;
+			}
+			
+		}
+	.cta {
+		text-align: center;
+		padding: 100px 0;
+		color: $white;
+		background: {
+			image: url('../img/page-1_slide1.jpg');
+			size: cover;
+			position: center;
+		}
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	 }
+	&.promos {
+		@extend %clearfix;
+		@include content(5vw);
+		//padding: 75px 5vw;
+		background-color: $litegray;
+		div {
+			width: 25%;
+			float: left;
+		}
+	 }
+	&.features {
+		@extend %clearfix;
+			@include content(5vw);
+			//padding: 75px 5vw;
+			text-align: center;
+			div {
+				width: 33.3333333%;
+				float: left;
+				i {
+					width: 3em;
+					height: 3em;
+					font-size: 3em;
+					color: $comcolor;
+					border: 1px solid $comcolor;
+					border-radius: 50%;
+					line-height: 3em;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	&.about {
+		@extend %clearfix;
+		@include content(5vw);
+		div:first-child {
+			width: 33%;
+			float: left;
+		}
+		div:last-child {
+			width: 66%;
+			float: left;
+		}
+	}
+	&.fixed1 {
+		padding: 150px 0;
+		background: {
+			image: url('../img/parallax1-1.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+			attachment: fixed;
+		}
+		h1 {
+		text-align: center;
+		color: $white;
+		font-size: 4em;
+		font-weight: 100;
+		}
+	}
+	&.do {
+		@extend %clearfix;
+			
+		h1 {
+			color: $keycolor;
+			font-size: 4em;
+			text-align: center;
+			@include content(5vw);
+		}
+		div {
+			width: 33%;
+			float: left;
+			padding: 5%;
+			box-sizing: border-box;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	&.product {
+		@extend %clearfix;
+		@include content(5vw);
+		background-color: $litegray;
+		h3 {
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		div:first-child {
+			width: 33%;
+			float: left;
+		}
+		div:last-child {
+			width: 66%;
+			float: left;
+		}
+	}
+	&.fixed2 {
+		padding: 150px 0;
+		background: {
+			image: url('../img/parallax1.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+			attachment: fixed;
+		}
+		h1 {
+		text-align: center;
+		color: $white;
+		font-size: 4em;
+		font-weight: 100;
+		}
+	}
+	&.news {
+		@extend %clearfix;
+			
+		h1 {
+			color: $keycolor;
+			font-size: 4em;
+			text-align: center;
+			@include content(5vw);
+		}
+		div {
+			width: 33%;
+			float: left;
+			padding: 5%;
+			box-sizing: border-box;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	&.hovers {
+		@extend %clearfix;
+		div {
+			width: (100/7);
+			height: (100vw/7);
+			float: left;
+			background-size: cover;
+			background-position: center;
+			&:hover {
+				background-size: 150%;
+				}
+			transition: background-size 200ms ease-in-out;
+			}
+		div:nth-child(1) {
+			background-image: url('../img/page-1_img8.jpg');
+		}
+		div:nth-child(2) {
+			background-image: url('../img/page-1_img9.jpg');
+		}
+		div:nth-child(3) {
+			background-image: url('../img/page-1_img10.jpg');
+		}
+		div:nth-child(4) {
+			background-image: url('../img/page-1_img11.jpg');
+		}
+		div:nth-child(5) {
+			background-image: url('../img/page-1_img12.jpg');
+		}
+		div:nth-child(6) {
+			background-image: url('../img/page-1_img8.jpg');
+		}
+		div:nth-child(7) {
+			background-image: url('../img/page-1_img9.jpg');
+		}
+		
+	}
+
+}
+
+.flex {
+	.utiliy_nav {
+		display: flex;
+		h1 {
+			color: $logocolor;
+			margin-bottom: 0;
+			margin-right: auto;
+		}
+		ul {
+			display: flex;
+			li {
+				display: inline-flex;
+				i {
+				margin: 0 1vw;
+				font-size: 2em;
+				color: $comcolor;
+				}
+			}
+		}
+	}
+	nav {
+		background-color: $black;
+		color: $white;
+		ul {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+
+			li {
+				//flex: 1;
+				text-align: center;
+				font-size: 1.1em;
+				font-weight: 100;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $keycolor;
+				}
+				a {
+					display: block;
+					padding: 25px 30px;
+				}
+			}
+		}
+	}
+	.cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 25vw;
+		color: $white;
+		background: {
+			image: url('../img/page-1_slide1.jpg');
+			size: cover;
+			position: center;
+		}
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	}
+	&.promos {
+		display: flex;
+		justify-content: center;
+		@include content(0);
+		//padding: 75px 0;
+		background-color: $litegray;
+		div {
+			width: 20%;
+		}
+
+	}
+	&.features {
+			@include content(0);
+			//padding: 75px 0vw;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			div {
+				width: 30%;
+				i {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 3em;
+					height: 3em;
+					font-size: 3em;
+					color: $comcolor;
+					border: 1px solid $comcolor;
+					border-radius: 50%;
+					margin: 0 auto 40px;
+				}
+			}
+		}
+		&.about {
+			@include content(5vw);
+			display: flex;
+			div:first-child {
+				flex: 1;
+			}
+			div:last-child {
+				flex: 2;
+			}
+		}
+	&.fixed1, 
+	&.fixed2 {
+		padding: 150px 0;
+		background: {
+			image: url('../img/parallax1-1.jpg');
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+			attachment: fixed;
+	 }
+	 h1 {
+		text-align: center;
+		color: $white;
+		font-size: 4em;
+		font-weight: 100;
+		}
+	}
+	&.do {	
+		//display: flex;
+		flex-direction: column;
+		span {
+			display: flex;
+			flex-direction: row;
+		}
+		h1 {
+			color: $keycolor;
+			font-size: 4em;
+			text-align: center;
+			@include content(5vw);
+		}
+		div {
+			padding: 5%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	&.product {
+		@include content(5vw);
+		background-color: $litegray;
+		display: flex;
+		h3 {
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		div:first-child {
+			flex: 1;
+		}
+		div:last-child {
+			flex: 2;
+		}
+	}
+	&.fixed2 {
+		background-image: url('../img/parallax1.jpg');
+	}
+	&.news {	
+		//display: flex;
+		flex-direction: column;
+		span {
+			display: flex;
+			flex-direction: row;
+		}
+		h1 {
+			color: $keycolor;
+			font-size: 4em;
+			text-align: center;
+			@include content(5vw);
+		}
+		div {
+			padding: 5%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	&.hovers {
+		display: flex;
+		div {
+			flex: 1;
+			height: (100vw/7);
+			background-size: 130%;
+			background-position: center;
+			&:hover {
+				background-size: 130%;
+				}
+			transition: background-size 200ms ease-in-out;
+			}
+		div:nth-child(1) {
+			background-image: url('../img/page-1_img8.jpg');
+		}
+		div:nth-child(2) {
+			background-image: url('../img/page-1_img9.jpg');
+		}
+		div:nth-child(3) {
+			background-image: url('../img/page-1_img10.jpg');
+		}
+		div:nth-child(4) {
+			background-image: url('../img/page-1_img11.jpg');
+		}
+		div:nth-child(5) {
+			background-image: url('../img/page-1_img12.jpg');
+		}
+		div:nth-child(6) {
+			background-image: url('../img/page-1_img8.jpg');
+		}
+		div:nth-child(7) {
+			background-image: url('../img/page-1_img9.jpg');
+		}
+		
+	}
+}

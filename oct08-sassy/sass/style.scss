@@ -1,0 +1,57 @@
+/* sass goes here */
+$rand: random(360);
+$randcolor: hsla($rand, 50%, 50%, 1);
+$deg: hue($randcolor);
+
+@mixin div-padding($x){
+	padding: $x;
+}
+@mixin insta_border($x,$y,$z) {
+	border-width: $y;
+	border-style: $x;
+	border-color: $z;
+	padding: $y 50px 50px;
+	color: $z;
+	//text-shadow: 1px 1px 0 darken($y, 10);
+}
+
+$key: hsla(100, 50%, 50%, 1);
+$red: $key;
+
+$orange: lighten(adjust-hue($key, 35),20);
+$lightened-orange: lighten($orange, 20);
+
+$yellow: adjust-hue($key, 60);
+$purple: complement(adjust-hue($key, 100));
+
+$blue: invert(adjust-hue($key, 200));
+$darken_blue: darken($blue, 20); 
+
+main div {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 3%;
+	&:nth-of-type(1) {
+		background-color: $red;
+		//@include div-padding(20px);
+		@include insta_border(dotted, 5px, $orange);
+		&::before {
+			content: '#{$deg}';
+		}
+	}
+}
+main div:nth-of-type(2) {
+	//@include div-padding(40px);
+	@include insta_border(ridge, 5px, $darken_blue);
+	background-color: $orange;
+}
+main div:nth-of-type(3) {
+	background-color: $purple;
+}
+main div:nth-of-type(4) {
+	background-color: $darken_blue;
+}
+main div:last-of-type {
+	background-color: $blue;
+}

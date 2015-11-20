@@ -1,0 +1,71 @@
+@import "compass/css3";
+
+$size: 150px;
+$grid: url('data:image/svg+xml,<svg width="18" height="18" stroke="black" stroke-width="1" xmlns="http://www.w3.org/2000/svg"><path d="m 0 0 h18v18h-18v-6h18v-6h-18v-6h6v18h6v-18h-12v18" fill="transparent"></path>
+  </svg>');
+body {
+  background: #333;
+  perspective: 10000px;
+}
+.cube, 
+.sides {
+  position: relative;
+  transform-style: preserve-3d;
+  background: transparent $grid no-repeat;
+  background-size: contain;
+  &:before, 
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent $grid no-repeat;
+    background-size: contain;
+  } 
+  &:before {
+    transform-origin: left center;    
+  }
+  &:after {
+    transform-origin: bottom center;    
+  }
+}
+.cube {
+  width: $size;
+  height: $size;
+  background-color: white;
+
+  margin: $size/2 auto;
+  animation: spin 7s linear infinite;
+  &:before {
+    background-color: blue;
+    transform: rotateY(90deg);
+  }
+  &:after {
+    background-color: orange;
+    transform: rotateX(90deg);
+  }
+}
+.sides {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg) translateZ(-$size);
+  background-color: yellow;
+  &:before {
+    background-color: green;
+    transform: rotateY(-90deg);    
+  }
+  &:after {
+    background-color: red;
+    transform: rotateX(-90deg)
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate3d(1,.25,.5,0deg);
+  }
+  to {
+    transform: rotate3d(1,.75,1,360deg);
+  }
+}

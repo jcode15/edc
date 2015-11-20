@@ -1,0 +1,224 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.head {
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+}
+.head h1 {
+  color: white;
+  float: left;
+  font-size: 50px;
+  font-weight: 100;
+  padding: 0 80px;
+}
+.head ul {
+  float: right;
+}
+.head li {
+  display: inline-block;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.head a {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+}
+.head::before, .head::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button {
+  background-color: #57c9d6;
+  display: block;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #57c9d6;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+  margin: 0;
+}
+
+.imgone {
+  width: 100%;
+  height: 480px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.section {
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.section li {
+  float: left;
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section h2 {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 100;
+}
+.section img {
+  width: 85%;
+}
+.section::before, .section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.section p {
+  float: left;
+  padding: 10px;
+}
+
+.two {
+  background-color: #8c5240;
+  width: 100%;
+  height: 500px;
+}
+.two section {
+  background-color: #8c5240;
+  float: left;
+  width: 25%;
+  height: 500px;
+}
+.two section h3 {
+  font-size: 25px;
+  width: 120%;
+  color: #ee8f72;
+}
+.two section p {
+  color: #da866c;
+}
+.two::before, .two::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.secone {
+  width: 25%;
+  height: 500px;
+}
+.secone::before, .secone::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.secone li {
+  display: block;
+  text-decoration: none;
+}
+.secone img {
+  padding-top: 35px;
+}
+.secone p {
+  width: 70%;
+  float: right;
+  padding-top: 30px;
+}
+.secone::before, .secone::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sectwo {
+  width: 25%;
+}
+.sectwo li {
+  display: block;
+  text-decoration: none;
+}
+.sectwo img {
+  padding-top: 35px;
+}
+.sectwo p {
+  width: 70%;
+  float: right;
+  padding-top: 30px;
+}
+.sectwo::before, .sectwo::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.secthree img {
+  padding: 35px;
+}
+.secthree p {
+  float: left;
+  width: 160%;
+  margin: 5px;
+  padding-left: 30px;
+}
+.secthree::before, .secthree::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.secthree h3 {
+  padding-left: 35px;
+}
+
+.three {
+  background-color: #271611;
+  color: #bb755d;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  text-decoration: none;
+}
+.three h4 {
+  width: 50%;
+  margin: 0;
+  padding: 70px 50px 0px 50px;
+  font-size: 30px;
+}
+.three p {
+  width: 70%;
+  padding: 5px 50px;
+}
+.three nav {
+  width: 50%;
+  height: 500px;
+  position: relative;
+  text-decoration: none;
+  bottom: 407px;
+  left: 905px;
+}
+.three li {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #bb755d;
+}
+.three a {
+  color: #bb755d;
+}
+
+footer {
+  background-color: #271611;
+}

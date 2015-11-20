@@ -1,0 +1,60 @@
+/*
+Error: Invalid CSS after "...$colorpink), 10": expected ";", was ");"
+        on line 113 of c:/Users/student/Desktop/edc/aug03-bootstrap/scss/clearcut.scss
+
+108: 	text-transform: uppercase;
+109: 	padding: 10px;
+110: 	margin-top: 20px;
+111: 	a:hover {
+112: 		color: white;
+113: 		background: lighten($colorpink), 10);
+114: 		text-decoration: none;
+115: 	}
+116: }
+117: 
+118: .btn-group-lg>.btn, .btn-lg {
+
+Backtrace:
+c:/Users/student/Desktop/edc/aug03-bootstrap/scss/clearcut.scss:113
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1093:in `tok!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:758:in `block in try_declaration'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1138:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1138:in `rethrow'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:763:in `try_declaration'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:632:in `ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:657:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:278:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+c:/Ruby22-x64/bin/compass:23:in `load'
+c:/Ruby22-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...$colorpink), 10\": expected \";\", was \");\"\A         on line 113 of c:/Users/student/Desktop/edc/aug03-bootstrap/scss/clearcut.scss\A \A 108: 	text-transform: uppercase;\A 109: 	padding: 10px;\A 110: 	margin-top: 20px;\A 111: 	a:hover {\A 112: 		color: white;\A 113: 		background: lighten($colorpink), 10);\A 114: 		text-decoration: none;\A 115: 	}\A 116: }\A 117: \A 118: .btn-group-lg>.btn, .btn-lg {"; }

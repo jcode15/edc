@@ -1,0 +1,135 @@
+/*put your scss here*/
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+.btn.btn-lg {
+  padding: 16px 32px;
+  font-size: 32px;
+  border-width: 8px;
+  border-radius: 64px;
+}
+.btn.btn-sm {
+  padding: 4px 8px;
+  font-size: 8px;
+  border-width: 2px;
+  border-radius: 12px;
+}
+
+section {
+  background-color: pink;
+  color: #101010;
+  /*background-color: $section-bg;
+  @if $hue >= 300deg {
+  	color: white;
+  }
+  @else if $hue >= 200deg and $hue <= 300deg {
+  	color: yellow;
+  }
+  @else {
+  	color: black;
+  }
+  /*background-color: $section-bg;
+  color: white;
+  @if $section-bg == yellow {
+  	color: black;
+  	font-size: 110%;
+  }@else if $section-bg == red {
+  	color: blue;
+  	font-size: 200%;
+  }@else {
+  	color: white;
+  	font-size: 100%;
+  }*/
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  line-height: 3;
+  list-style: none;
+  border-width: 0 10px 0 0;
+  border-style: solid;
+  padding-left: 20px;
+}
+aside li:nth-of-type(1) {
+  background-color: #d9ba8c;
+  color: #bf8c40;
+}
+aside li:nth-of-type(2) {
+  background-color: #c9d98c;
+  color: #a6bf40;
+}
+aside li:nth-of-type(3) {
+  background-color: #9cd98c;
+  color: #59bf40;
+}
+aside li:nth-of-type(4) {
+  background-color: #8cd9ab;
+  color: #40bf73;
+}
+aside li:nth-of-type(5) {
+  background-color: #8cd9d9;
+  color: #40bfbf;
+}
+aside li:nth-of-type(6) {
+  background-color: #8cabd9;
+  color: #4073bf;
+}
+aside li:nth-of-type(7) {
+  background-color: #9c8cd9;
+  color: #5940bf;
+}
+aside li:nth-of-type(8) {
+  background-color: #c98cd9;
+  color: #a640bf;
+}
+aside li:nth-of-type(9) {
+  background-color: #d98cba;
+  color: #bf408c;
+}
+aside li:nth-of-type(10) {
+  background-color: #d98c8c;
+  color: #bf4040;
+}
+aside li:nth-of-type(11) {
+  background-color: #d9ba8c;
+  color: #bf8c40;
+}
+aside li:nth-of-type(12) {
+  background-color: #c9d98c;
+  color: #a6bf40;
+}
+aside li:nth-of-type(13) {
+  background-color: #9cd98c;
+  color: #59bf40;
+}
+aside li:nth-of-type(14) {
+  background-color: #8cd9ab;
+  color: #40bf73;
+}
+aside li:nth-of-type(15) {
+  background-color: #8cd9d9;
+  color: #40bfbf;
+}
+aside li:nth-of-type(16) {
+  background-color: #8cabd9;
+  color: #4073bf;
+}
+aside li:nth-of-type(17) {
+  background-color: #9c8cd9;
+  color: #5940bf;
+}
+aside li:nth-of-type(18) {
+  background-color: #c98cd9;
+  color: #a640bf;
+}
+aside li:nth-of-type(19) {
+  background-color: #d98cba;
+  color: #bf408c;
+}

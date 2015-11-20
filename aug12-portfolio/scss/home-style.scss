@@ -1,0 +1,188 @@
+/*put your scss here*/
+@import 'variables';
+
+body {
+	background-color: $black;
+.maincon {
+	display: flex;
+	flex-direction: column;
+	.topcon {
+		display: flex;
+		flex-direction: row-reverse;
+		.contain {
+			flex: 15;
+			.about {
+				img {
+					transform: rotate(-25deg);
+					-webkit-transition: -webkit-transform .8s ease-in-out;
+                     transition: transform .8s ease-in-out;
+				}
+				img:hover {
+					  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+					}
+			}
+			 .service {
+				img {
+					transform: rotate(-25deg);
+					-webkit-transition: -webkit-transform .8s ease-in-out;
+                    transition: transform .8s ease-in-out;
+				}
+				img:hover {
+					  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+					}
+				}
+			.contact {
+				img {
+				transform: rotate(25deg);
+				-webkit-transition: -webkit-transform .8s ease-in-out;
+                 transition: transform .8s ease-in-out;
+				}
+				img:hover {
+					  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+					}
+				}
+			}
+		.container {
+			flex: 25;
+	    }
+	   }
+	}
+}
+ .bottomcon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer {
+	text-align: center;
+	p {
+		color: $hotpink;
+		span {
+			color: $white;
+		}
+	}
+}
+
+@media screen and (max-width: 1400px){
+
+	.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
+			}
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
+			width: 80%;
+		}
+	}
+}
+@media screen and (max-width: 992px){
+		.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
+			}
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+		.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
+			}
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+		.contain {
+		margin-top: 5%;
+		margin-left: 3%;
+	
+		.about, .contact, .service {
+			a img {
+				width: 45%;
+				margin: 6%;
+			}
+		}
+	}
+	
+
+	.container {
+			.polio {
+				margin-right: 5%;
+			}
+			img{
+				width: 100%;
+			}
+	}
+
+	.temp {
+		a img {
+			width: 80%;
+		}
+	}
+}

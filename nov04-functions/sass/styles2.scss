@@ -1,0 +1,19 @@
+header {
+	background-color: pink;
+	&:before, &:after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	h1 {
+		background-color: green;
+		padding-left: 5%;
+		float: left;
+	}
+	nav {
+		background-color: red;
+		float: right;
+
+	}
+}

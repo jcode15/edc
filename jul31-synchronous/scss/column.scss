@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'layout';
+.secone {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: white;
+	margin-top: 5%;
+	.side1 {
+	flex: 2;
+	margin: 3%;
+		h2 {
+			font-size: 25px;
+		}
+		p > a {
+			display: inline-block;
+		    background: #323338;
+		    border-radius: 4px;
+		    line-height: normal;
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-family: 'Abel', sans-serif;
+		    font-size: 10px;
+		    color: #FFFFFF;
+		    padding: 10px 14px;
+		    margin: 3% 0 20px 0;
+		    &:hover {
+				Stext-decoration: underline;
+			}
+		}
+	}
+	.mid {
+		flex: 6;
+		margin: 3%;
+		h2 {
+			font-size: 35px;
+		}
+	}
+	.side2 {
+		flex: 2;
+		margin: 3%;
+		h2 {
+			font-size: 25px;
+		}
+		a {
+			display: block;
+			border-bottom: 1px solid gray;
+			line-height: 180%;
+			white-space: nowrap;
+			padding: 5%;
+			margin: 0 0 3% 0;
+			&:hover {
+		text-decoration: underline;
+	}
+		}
+		a:nth-of-type(7) {
+			border: none;
+		}
+	}
+}
+
+.side2 a:last-of-type {
+	display: inline-block;
+	background: #323338;
+	border: 1px solid #323338;
+	border-radius: 4px;
+	line-height: normal;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	padding: 8px 12px;
+	margin-top: 15%;
+	white-space: nowrap;
+	&:hover {
+		text-decoration: underline;
+	}
+}

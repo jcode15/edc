@@ -1,0 +1,71 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+#loginBox {
+  width: 20%;
+  background-color: lightblue;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#loginBox label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#loginBox input {
+  width: 80%;
+  font-size: 1.75em;
+  line-height: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 4px;
+}
+#loginBox button {
+  width: 80px;
+  background-color: gray;
+  color: white;
+  font-size: 1.25em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 4px;
+  padding: 3px 0;
+  margin-top: 10px;
+  -ms-flex-item-align: start;
+          -webkit-align-self: flex-start;
+          align-self: flex-start;
+}
+
+/*HEADER STARTS HERE*/
+/*HEADER ENDS HERE*/
+/*STARTS HERE*/
+/*ENDS HERE*/
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/

@@ -1,0 +1,90 @@
+body {
+  background-image: url("../img/background3 (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    color: rgba(255, 107, 181, 0.95);
+    font-size: 200%;
+    text-align: center;
+    margin: 3%;
+  }
+
+  .containerone > p {
+    color: white;
+    width: 75%;
+    font-size: 80%;
+    margin-left: 12%;
+    margin-bottom: 3%;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  main h2 {
+    font-size: 90%;
+    margin: 0 0 0 12%;
+    color: rgba(255, 255, 255, 0.96);
+  }
+  main h3 {
+    font-size: 80%;
+    margin: 0 0 0 12%;
+    color: rgba(255, 255, 255, 0.96);
+  }
+  main address > p {
+    margin: 0 12%;
+    color: rgba(255, 255, 255, 0.96);
+  }
+  main address a {
+    font-size: 80%;
+    text-decoration: none;
+    margin: 0 12%;
+  }
+
+  .containertwo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .containertwo a {
+    margin: 0;
+  }
+  .containertwo div:first-of-type {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 50%;
+    padding: 0;
+    margin: 0 0 0 12%;
+  }
+  .containertwo div:last-of-type {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 50%;
+    padding: 0;
+    margin: 0 0 0 1%;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer p {
+    color: rgba(255, 107, 181, 0.95);
+  }
+  footer p span {
+    color: rgba(255, 255, 255, 0.96);
+  }
+}
+@media print {
+  main h2, main h3 {
+    font-size: 90%;
+    margin: 0;
+  }
+}

@@ -10,7 +10,17 @@ h1,h2,h3,h4,h5,h6, p {
 	margin: 0;
 	padding: 0;
 }
-
-a {
+li {
 	list-style: none;
+}
+a {
+	text-decoration: none;
+	background-color: dodgerblue;
+	border: 1px solid dodgerblue;
+	border-radius: 5px;
+	padding: .5vw 2vw;
+	&:hover{
+		background-color: white;
+		color: black;
+	}
 }

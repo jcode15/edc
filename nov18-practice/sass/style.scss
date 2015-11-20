@@ -1,12 +1,125 @@
 @import 'variables';
 @import 'reset';
-@import 'fontawesome';
+//@import 'fontawesome';
+
+body {
+	padding: 5vw;
+	background-color: purple;
+}
 
 /*HEADER STARTS HERE*/
+header {
+	width: 100%;
+	height: auto;
+	padding: 20vw 0;
+	background: {
+		image: url('../img/header 1360x800 mountains.jpg');
+		position: bottom;
+		size: cover;
+		repeat: no-repeat;
+	}
+
+}
+nav{
+	margin-left: 350px;
+}
+ul::before, ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+li {
+	float: left;
+	list-style: none;
+	a {
+		font-size: 2em;
+		text-decoration: none;
+		padding: 1vw;
+	}
+	a:hover{
+		color: dodgerblue;
+	}
+}
+a, p {
+	color: white;
+}
 /*HEADER ENDS HERE*/
 
 /*STARTS HERE*/
+
+main {
+	width: 100%;
+	height:auto ;
+	padding: 3vw;
+	background-color: lighten(purple, 20);
+	box-sizing: border-box;
+	&::before, &::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+	div{
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+		&::before, &::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+		img{
+			box-sizing: border-box;
+			float: left;
+			padding: 3vw;
+		}
+		p{
+			padding: 4vw 0;
+		}
+
+	}
+}
 /*ENDS HERE*/
+
+#sec_one {
+	width: 100%;
+	height: auto;
+	background-color: lighten(purple, 20);
+	box-sizing: border-box;
+	&::before, &::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+	div {
+		width: 100%;
+		height: auto;
+		padding: 3vw;
+		box-sizing: border-box;
+		p{
+			box-sizing: border-box;
+			font-size: 1.5em;
+			line-height: 2em;
+			padding: 3vw;
+		}
+		a {
+			margin: 3vw;
+		}
+	}
+	div:nth-of-type(odd){
+		float: left;
+		img{
+			float: right;
+			padding: 3vw;
+		}
+	}
+	div:nth-of-type(even){
+		float: right;
+		img{
+			float: left;
+			padding: 3vw;
+		}
+	}
+}
 
 /*FOOTER STARTS HERE*/
 /*FOOTER ENDS HERE*/

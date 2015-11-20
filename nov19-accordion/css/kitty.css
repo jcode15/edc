@@ -1,0 +1,105 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  padding: 10vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  width: 60%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 1vw;
+}
+main h1 {
+  font-size: 2em;
+  padding: 1vw 0;
+}
+main #resetbtn {
+  background-color: pink;
+  padding: 1vw 3vw;
+  margin: 1vw 0;
+  color: red;
+}
+main div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  padding: 1vw;
+  background-color: white;
+  box-sizing: border-box;
+}
+main div img {
+  width: 50px;
+  height: 70px;
+  background-image: url("../img/kitten.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main h2 {
+  padding: 1vw 0;
+  border-radius: 10px;
+  color: gray;
+}
+main input {
+  margin: .5vw 0;
+  color: gray;
+}
+main button {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  padding: 1vw 3vw;
+}

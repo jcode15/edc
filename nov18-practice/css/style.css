@@ -1,0 +1,151 @@
+/* VARIABLES goes here */
+/* GLOBEL MARK UP goes here */
+body {
+  margin: 0;
+}
+
+ul, ol {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+  padding: .5vw 2vw;
+}
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+body {
+  padding: 5vw;
+  background-color: purple;
+}
+
+/*HEADER STARTS HERE*/
+header {
+  width: 100%;
+  height: auto;
+  padding: 20vw 0;
+  background-image: url("../img/header 1360x800 mountains.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  margin-left: 350px;
+}
+
+ul::before, ul::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+li a {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 1vw;
+}
+li a:hover {
+  color: dodgerblue;
+}
+
+a, p {
+  color: white;
+}
+
+/*HEADER ENDS HERE*/
+/*STARTS HERE*/
+main {
+  width: 100%;
+  height: auto;
+  padding: 3vw;
+  background-color: #e600e6;
+  box-sizing: border-box;
+}
+main::before, main::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+main div {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+main div::before, main div::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+main div img {
+  box-sizing: border-box;
+  float: left;
+  padding: 3vw;
+}
+main div p {
+  padding: 4vw 0;
+}
+
+/*ENDS HERE*/
+#sec_one {
+  width: 100%;
+  height: auto;
+  background-color: #e600e6;
+  box-sizing: border-box;
+}
+#sec_one::before, #sec_one::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#sec_one div {
+  width: 100%;
+  height: auto;
+  padding: 3vw;
+  box-sizing: border-box;
+}
+#sec_one div p {
+  box-sizing: border-box;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: 3vw;
+}
+#sec_one div a {
+  margin: 3vw;
+}
+#sec_one div:nth-of-type(odd) {
+  float: left;
+}
+#sec_one div:nth-of-type(odd) img {
+  float: right;
+  padding: 3vw;
+}
+#sec_one div:nth-of-type(even) {
+  float: right;
+}
+#sec_one div:nth-of-type(even) img {
+  float: left;
+  padding: 3vw;
+}
+
+/*FOOTER STARTS HERE*/
+/*FOOTER ENDS HERE*/
